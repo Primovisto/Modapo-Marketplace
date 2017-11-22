@@ -20,6 +20,9 @@ from .settings import MEDIA_ROOT
 from marketplace import views
 from accounts import views as accounts_views
 from blog import views as blog_views
+from threads import views as forum_views
+from django.conf import settings
+
 
 urlpatterns = [
 
@@ -31,7 +34,26 @@ urlpatterns = [
     url(r'^profile/$', accounts_views.profile, name='profile'),
     url(r'^login/$', accounts_views.login, name='login'),
     url(r'^logout/$', accounts_views.logout, name='logout'),
+
+    # Blog URLs
     url(r'^blog/$', blog_views.post_list, name='blog'),
 
+    # Forum URLs
+    url(r'^forum/$', forum_views.forum),
+    url(r'^threads/(?P<subject_id>\d+)/$',
+        forum_views.threads, name='threads'),
+    url(r'^new_thread/(?P<subject_id>\d+)/$',
+        forum_views.new_thread, name='new_thread'),
+    url(r'^thread/(?P<thread_id>\d+)/$', forum_views.thread, name='thread'),
+    url(r'^post/new/(?P<thread_id>\d+)/$',
+        forum_views.new_post, name='new_post'),
+    url(r'^post/edit/(?P<thread_id>\d+)/(?P<post_id>\d+)/$',
+        forum_views.edit_post, name='edit_post'),
+    url(r'^post/delete/(?P<thread_id>\d+)/(?P<post_id>\d+)/$',
+        forum_views.delete_post, name='delete_post'),
 
 ]
+
+if settings.DEBUG:
+    import debug_toolbar
+    urlpatterns.append(url(r'^debug/', include(debug_toolbar.urls)))

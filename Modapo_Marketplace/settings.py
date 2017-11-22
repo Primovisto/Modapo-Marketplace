@@ -29,6 +29,8 @@ ALLOWED_HOSTS = []
 
 SITE_ID = 1
 
+INTERNAL_IPS = ('127.0.0.1',)
+
 
 # Application definition
 
@@ -41,13 +43,16 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'django_forms_bootstrap',
+    'disqus',
+    'debug_toolbar',
+    'tinymce',
+    'emoticons',
     'marketplace',
     'products',
     'accounts',
-    'forum',
+    'threads',
     'blog',
-    'disqus',
-
+    'polls',
 
 ]
 
@@ -60,6 +65,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 
 ]
 
@@ -127,6 +133,8 @@ USE_L10N = True
 
 USE_TZ = True
 
+DISQUS_API_KEY = '6zrnagsTNKjNVXsmoWJC0zwmw7A3cB2kx4c0UlibjgrntiLgMswqathYSMn0qNrl'
+
 DISQUS_WEBSITE_SHORTNAME = 'Modapo Marketplace'
 
 AUTH_USER_MODEL = 'accounts.User'
@@ -143,9 +151,12 @@ AUTHENTICATION_BACKENDS = (
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
-
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "static"),
+    os.path.join(BASE_DIR, "static"),  # static directory at the project level
 )
+
+# tinymce settings
+TINYMCE_JS_ROOT = os.path.join(BASE_DIR, "static", 'js', 'tinymce', '/tinymce.min.js')

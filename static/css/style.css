@@ -1,0 +1,43 @@
+.nav{
+    margin-right: 20px;
+}
+
+.navbar-brand{
+    padding: 0 15px;
+    position: relative;
+    top: -3px;
+}
+
+.navbar-form{
+    margin-top:0;
+}
+
+.form-control{
+    background-color: #f9f9f8;
+}
+
+#sign-in-link{
+    border: 1px solid;
+    padding: 8px 10px;
+    margin-left: 8px;
+}
+
+span.nav-icon{
+    display:inherit;
+}
+
+span.text-link{
+    margin-left:4px;
+    position: relative;
+    top: -2px;
+    color:#666;
+    font-family: Roboto;
+    font-size:12px;
+}
+
+li.cart{
+    position: relative;
+    bottom: 16px;
+    left: 16px;
+    border-left: 1px solid #eee;
+}

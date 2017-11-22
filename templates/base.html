@@ -2,46 +2,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+     <link rel="stylesheet" href="{% static "css/font-awesome-4.7.0/css/font-awesome.css" %}">
     <meta charset="utf-8">
     <title>Our Simple Site</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/cerulean/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    {% block head_js %}{% endblock head_js %}
 </head>
 <body>
-<div class="container">
-   <div class="masthead">
+<div class="col-xs-12">
+   <div class="masthead" style="margin-top:20px;">
+
+       <div class="navbar-brand">
+          <img src="http://i68.tinypic.com/16j387a.jpg" height="50" width="170"/>
+       </div>
+                <form class="navbar-form navbar-left" role="search" action='#'>
+                <div class="form-group">
+                  <input type="text" class="form-control" name='q' placeholder="Search for items" style='width: 300px;'>
+                </div>
+                <button type="submit" class="btn btn-primary">Search</button>
+              </form>
+
+
        <ul class="nav nav-pills pull-right">
-           <li><a href="#">Home</a></li>
-           <li><a href="#">About</a></li>
-           <li><a href="{% url 'blog' %}">Blog</a></li>
-           <li><a href="{% url 'register' %}">Register</a></li>
-           <li><a href="{% url 'login' %}">Log In</a></li>
-           <li><a href="{% url 'logout' %}">Log Out</a></li>
+           <li><a href="/">Sell on Modapo</a></li>
+           {% if user.is_authenticated %}
+                <li><a href="{% url 'profile' %}">Profile</a></li>
+                <li><a href="{% url 'logout' %}">Log Out</a></li>
+            {% else %}
+                <li><a href="{% url 'register' %}">Register</a></li>
+                <li><a href="{% url 'login' %}" id="sign-in-link">Sign In</a></li>
+            {% endif %}
+       <li class="cart">
+           <a class="nav-link" href="#">
+               <span class="nav-icon">
+                   <img src="http://i68.tinypic.com/24fhe6s.png" height="30" width="30"/>
+               </span>
+               <span class="text-link">
+                   <span>Cart</span>
+               </span>
+
+           </a>
+       </li>
        </ul>
-       <h1><span class="fui-settings-16 muted">Modapo</span></h1>
+
    </div>
-   <hr>
-    {% if messages %}
-        <div class="alert alert-success">
-            <div class="messages">
-                {% for message in messages %}
-                    {{ message }}
-                {% endfor %}
-            </div>
-        </div>
-    {% endif %}
 
 
-   <div class="container">
-       {% block content %}
-       {% endblock %}
-   </div>
-   <hr>
-   <div class="footer">
-       <p>Made By Bootcampers and Django </p>
-   </div>
+</div>
+<div class="container">
+<div class="content">
+        {% block content %}
+        {% endblock %}
+</div>
 </div>
 </body>
 

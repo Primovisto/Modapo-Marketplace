@@ -31,7 +31,7 @@
 
        <ul class="nav nav-pills pull-right">
            <li><a href="{% url 'products' %}">Browse Products</a></li>
-           <li><a href="/">Sell on Modapo</a></li>
+           <li><a href="{% url 'new' %}">Sell on Modapo</a></li>
            {% if user.is_authenticated %}
                 <li><a href="{% url 'profile' %}">Profile</a></li>
                 <li><a href="{% url 'logout' %}">Log Out</a></li>

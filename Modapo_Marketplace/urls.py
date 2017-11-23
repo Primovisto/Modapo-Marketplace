@@ -37,6 +37,7 @@ urlpatterns = [
     url(r'^logout/$', accounts_views.logout, name='logout'),
     url(r'^products/$', product_views.all_products, name='products'),
     url(r'^(?P<id>\d+)/$', product_views.product_page, name='productpage'),
+    url(r'^new/$', product_views.add_new_product, name='new'),
 
     # Blog URLs
     url(r'^blog/$', blog_views.post_list, name='blog'),

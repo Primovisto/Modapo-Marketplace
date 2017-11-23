@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from .models import Product
+from .forms import NewProductForm
+from django.contrib.auth.decorators import login_required
 
 
 def all_products(request):
@@ -14,3 +16,17 @@ def product_page(request, id):
     product.views += 1
     product.save()
     return render(request, "products/productpage.html", {'product': product})
+
+
+@login_required(login_url="/login?next=products/new")
+def add_new_product(request):
+    if request.method == "POST":
+        form = NewProductForm(request.POST, request.FILES)
+        if form.is_valid():
+            product = form.save(commit=False)
+            product.seller = request.user
+            product.save()
+            return redirect(product_page, product.pk)
+    else:
+        form = NewProductForm()
+    return render(request, 'products/productform.html', {'form': form})

@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static from staticfiles %}
+{% load bootstrap_tags %}
+{% block content %}
+<div class="container">
+    <div class="row">
+            <div class="col-md-4">
+                <a href="#">
+                    <img src="#">
+                </a>
+                <p class="#"><strong>Seller: </strong></p>
+                <hr>
+</div>
+    <div class="col-md-8">
+                <h3>{{ product.product }}</h3>
+                {% if product.image %}
+                    <img class="#" src="/media/{{ product.image }}"
+                         style="width:350px; height: 266px;  color: #ffffff;"/>
+                {% else %}
+                    <div class="#">No images</div>
+                {% endif %}
+                <p class=""><strong>Description: </strong>{{ product.description }}</p>
+                <p class=""><strong>Price: </strong>{{ product.price }}</p>
+                <p class=""><strong>Views: </strong> {{ product.views }}</p>
+                <hr>
+                <p>
+                    <button class="btn btn-success" onclick="location.href='{% url 'products' %}'">Return to all products</button>
+                    <button class="btn btn-success">Add to cart</button>
+                    <button class="btn btn-success">Buy it now</button>
+                </p>
+      </div>
+    </div>
+</div>
+{% endblock %}

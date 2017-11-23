@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load static from staticfiles %}
+{% load bootstrap_tags %}
+{% block content %}
+<div class="container">
+
+        <!-- Page Heading/Breadcrumbs -->
+        <h1>Browse products</h1>
+
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="#">Home</a>
+            </li>
+            <li class="breadcrumb-item active">Browse products</li>
+        </ol>
+
+        <!-- Content Row -->
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                {% for product in products %}
+                    <div class="row">
+                        <hr>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            {% if product.image %}
+                                <img src="/media/{{ product.image }}" style="width:350px; height: 266px;"/>
+                            {% else %}
+                                <div class="">No images available</div>
+                            {% endif %}
+                        </div>
+                        <div class="col-lg-8 col-md-6 col-sm-12">
+                            <h3>{{ product.product }}</h3>
+                            <div>
+                                <p class=""><strong>Description: </strong>{{ product.description }}</p>
+                                <p class=""><strong>Price: </strong>{{ product.price }}</p>
+                                <hr>
+                                <p><button class="btn btn-success" onclick="location.href='{% url 'productpage' product.id %}'">View product</button>
+                                <button class="btn btn-success">Add to cart
+                                        </button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                {% endfor %}
+
+            </div>
+        </div>
+        <!-- End of Content -->
+</div>
+{% endblock %}

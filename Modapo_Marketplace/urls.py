@@ -17,11 +17,12 @@ from django.conf.urls import include, url
 from django.contrib import admin
 from django.views.static import serve
 from .settings import MEDIA_ROOT
-from marketplace import views
+from home import views
 from accounts import views as accounts_views
 from blog import views as blog_views
 from threads import views as forum_views
 from django.conf import settings
+from products import views as product_views
 
 
 urlpatterns = [
@@ -34,6 +35,8 @@ urlpatterns = [
     url(r'^profile/$', accounts_views.profile, name='profile'),
     url(r'^login/$', accounts_views.login, name='login'),
     url(r'^logout/$', accounts_views.logout, name='logout'),
+    url(r'^products/$', product_views.all_products, name='products'),
+    url(r'^(?P<id>\d+)/$', product_views.product_page, name='productpage'),
 
     # Blog URLs
     url(r'^blog/$', blog_views.post_list, name='blog'),

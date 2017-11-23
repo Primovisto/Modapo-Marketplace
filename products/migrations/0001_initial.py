@@ -17,17 +17,15 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Post',
+            name='Product',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('title', models.CharField(max_length=200)),
-                ('content', models.TextField()),
-                ('created_date', models.DateTimeField(auto_now_add=True)),
-                ('published_date', models.DateTimeField(blank=True, null=True)),
+                ('product', models.CharField(default='', max_length=254)),
+                ('description', models.TextField()),
+                ('price', models.DecimalField(decimal_places=2, max_digits=6)),
                 ('views', models.IntegerField(default=0)),
-                ('tag', models.CharField(blank=True, max_length=30, null=True)),
                 ('image', models.ImageField(blank=True, null=True, upload_to='images')),
-                ('author', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
+                ('seller', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
             ],
         ),
     ]

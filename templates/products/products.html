@@ -31,6 +31,7 @@
                             <h3>{{ product.product }}</h3>
                             <div>
                                 <p class=""><strong>Description: </strong>{{ product.description }}</p>
+                                <p class=""><strong>Category: </strong>{{ product.category }}</p>
                                 <p class=""><strong>Price: </strong>{{ product.price }}</p>
                                 <hr>
                                 <p><button class="btn btn-success" onclick="location.href='{% url 'productpage' product.id %}'">View product</button>

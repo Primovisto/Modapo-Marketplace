@@ -8,6 +8,7 @@ class Product(models.Model):
 
     seller = models.ForeignKey('accounts.User')
     product = models.CharField(max_length=254, default='')
+    category = models.CharField(max_length=200, default='')
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
     views = models.IntegerField(default=0)

@@ -38,6 +38,7 @@ urlpatterns = [
     url(r'^products/$', product_views.all_products, name='products'),
     url(r'^(?P<id>\d+)/$', product_views.product_page, name='productpage'),
     url(r'^new/$', product_views.add_new_product, name='new'),
+    url(r'^(?P<id>\d+)/edit$', product_views.edit_product, name='edit'),
 
     # Blog URLs
     url(r'^blog/$', blog_views.post_list, name='blog'),

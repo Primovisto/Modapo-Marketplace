@@ -30,3 +30,19 @@ def add_new_product(request):
     else:
         form = NewProductForm()
     return render(request, 'products/productform.html', {'form': form})
+
+
+@login_required(login_url="/login?next=products/edit/")
+def edit_product(request):
+    product = get_object_or_404(Product, pk=id)
+    if request.method == "POST":
+        form = NewProductForm(request.POST, request.FILES, instance=product)
+        if form.is_valid():
+            product = form.save(commit=False)
+            product.seller = request.user
+            product.save()
+            return redirect(product_page, product.pk)
+    else:
+        form = NewProductForm(instance=product)
+    return render(request, 'products/productform.html', {'form': form})
+

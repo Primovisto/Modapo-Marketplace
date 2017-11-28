@@ -22,44 +22,24 @@
     <h1 style="color:#232323; text-align:center;margin:60px 0 40px 0; font-weight:100; font-size:28px;">Suggested Products</h1>
     </div>
     {% for product in products %}
-        <div class="container">
-        <div class="row">
 
-                        <div class="col-lg-4 col-md-6 col-sm-12">
+<section id="suggested-products" >
+
+                        <div class="col-sm-3">
+                        <div class="text-center" style="margin-top:30px;">
                             {% if product.image %}
+
                                 <img src="/media/{{ product.image }}" style="width:250px; height: 210px;"/>
                             {% else %}
                                 <div class="">No images available</div>
                             {% endif %}
                          <h3>{{ product.product }}</h3>
                         </div>
-
-        <div class="col-lg-4 col-md-6 col-sm-12">
-                            {% if product.image %}
-                                <img src="/media/{{ product.image }}" style="width:250px; height: 210px;"/>
-                            {% else %}
-                                <div class="">No images available</div>
-                            {% endif %}
-                         <h3>{{ product.product }}</h3>
                         </div>
-         <div class="col-lg-4 col-md-6 col-sm-12">
-                            {% if product.image %}
-                                <img src="/media/{{ product.image }}" style="width:250px; height: 210px;"/>
-                            {% else %}
-                                <div class="">No images available</div>
-                            {% endif %}
-                         <h3>{{ product.product }}</h3>
-                        </div>
-
-
-
-
-
-</div>
-
-</div>
-
 
 
     {% endfor %}
+
+  <footer style="text-align: center; margin-top:50px;" ><div class="container"><div class="row"><div class="col-xs-12"><p style="margin-top:20px;">&copy; Copyright 2017 Ed Stack</p></div></div></div> </footer>
+    </section>
 {% endblock %}

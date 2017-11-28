@@ -83,43 +83,6 @@ background: #fff none repeat scroll 0 0;
     width: 50px;
 }
 
-.base-footer{
-    margin-top:40px;
-    background-color:#eee;
-    height:300px;
-}
-
-.footer-title{
-    text-align:center;
-}
-
-.footer-social{
-    text-align:center;
-}
-
-.footer-content{
-    margin-top:60px;
-}
-
-.footer-contact-links{
-    text-align:center;
-    list-style:none;
-    margin:10px;
-}
-
-.footer-document-links{
-    text-align:center;
-    list-style:none;
-    margin:10px;
-}
-
-.footer-bottom-heading{
-    text-align:center;
-    margin-top:30px;
-    position:relative;
-    top:20px;
-
-}
 
 .responsive-header{
     margin-bottom:20px;

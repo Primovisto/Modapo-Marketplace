@@ -29,8 +29,9 @@
             <div class=" col-sm-6"></div>
             <div class="top-header-links col-sm-6 text-sm-right visible" style="text-align:right;position: relative;top: 8px;">
                 {% if user.is_authenticated %}
-                <li><a href="{% url 'profile' %}">Profile</a></li>
-                <li><a href="{% url 'logout' %}">Log Out</a></li>
+                <li><a style="color:#575757;font-family:raleway;margin:0 5px;list-style: none;" href="{% url 'profile' %}">Profile</a></li>
+                    <span class="divider"> | </span>
+                <li><a style="color:#575757;font-family:raleway;margin:0 5px; list-style: none;" href="{% url 'logout' %}">Log Out</a></li>
                 {% else %}
                 <a style="color:#575757;font-family:raleway;margin:0 5px;" href="{% url 'login' %}">Login</a>
                 <span class="divider"> | </span>
@@ -65,11 +66,11 @@
                     </ul>
                 </div>
                 <div class="col-sm-3 visible-sm visible-md visible-lg invisible-xs">
-                    <ul style="display:flex; flex-direction: row;flex-wrap: wrap; list-style: none; margin-top:30px;position:absolute;right:-60px;z-index:99999;">
-                        <li style="margin:0 5px;"><a href="#" data-mini="false" data-theme="e" data-role="button" class="opensearch" data-icon="search"><img src="https://openclipart.org/image/800px/svg_to_png/213239/Search-icon.png" height="20" width="20">Search</a></li>
+                    <ul style="display:flex; flex-direction: row;flex-wrap: wrap; list-style: none; margin-top:35px;position:absolute;right:0;z-index:99999;">
+                        <li style="margin:0 5px;"><a href="#" data-mini="false" data-theme="e" data-role="button" class="opensearch" data-icon="search" style="color:#232323; font-family:raleway;"><img src="https://openclipart.org/image/800px/svg_to_png/213239/Search-icon.png" height="20" width="20">Search Products</a></li>
                         <div class="search_field" style="display:none;">
         <input type="text" id="search" name="search" data-theme="e" placeholder="search items..."/>
-        <ul id="search-results"></ul>
+        <ul id="search-results" style=" background-color: #fff;border: 1px solid #999;padding: 10px;list-style:none;"></ul>
 
                     </ul>
                 </div>

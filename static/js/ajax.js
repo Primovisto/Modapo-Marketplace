@@ -19,7 +19,7 @@ $(function(){
 
 });
 
-function searchSuccess(data, textStatus, jqXHR){
+function searchSuccess(data){
     $('#search-results').html(data);
 }
 

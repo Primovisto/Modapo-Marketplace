@@ -31,6 +31,10 @@ SITE_ID = 1
 
 INTERNAL_IPS = ('127.0.0.1',)
 
+# Stripe environment variables
+STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE', 'pk_test_BXMhGZbzUnHrO4wR2QDrLSN1')
+STRIPE_SECRET = os.getenv('STRIPE_SECRET', 'sk_test_L2u1PAnN0QLTVcbLRes1qB2W')
+
 
 # Application definition
 
@@ -55,6 +59,9 @@ INSTALLED_APPS = [
     'polls',
 
 ]
+AUTH_USER_MODEL = 'accounts.User'
+AUTHENTICATION_BACKENDS = ('django.contrib.auth.backends.ModelBackend',
+                           'accounts.backends.EmailAuth',)
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -136,13 +143,6 @@ USE_TZ = True
 DISQUS_API_KEY = '6zrnagsTNKjNVXsmoWJC0zwmw7A3cB2kx4c0UlibjgrntiLgMswqathYSMn0qNrl'
 
 DISQUS_WEBSITE_SHORTNAME = 'Modapo Marketplace'
-
-AUTH_USER_MODEL = 'accounts.User'
-
-AUTHENTICATION_BACKENDS = (
-    'django.contrib.auth.backends.ModelBackend',
-    'accounts.backends.EmailAuth',
-)
 
 
 # Static files (CSS, JavaScript, Images)

@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% load bootstrap_tags %}
+{% load staticfiles %}
+
+{% block head_js %}
+  <script src="https://js.stripe.com/v2/" type="text/javascript"></script>
+  <script type="text/javascript">
+      //<![CDATA[
+      Stripe.publishableKey = '{{ publishable }}';
+      //]]>
+  </script>
+  <script type="text/javascript" src="{% static 'js/stripe.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <form role="form" method="post" id="payment-form" action="{% url 'buy_now_stripe' product.id %}">
+                    <div id="credit-card-errors" style="display:none">
+                        <div class="alert-message block-message error" id="stripe-error-message"></div>
+                    </div>
+                    <div class="row">
+                        <hr>
+                        <div class="col-md-4 col-sm-6">
+                            {% if product.image %}
+                                <img class="imageplaceholder" src="{{ MEDIA_URL }}{{ product.image }}"
+                                     style="width:300px; height: 266px; background-color: #12ABB2; color: #ffffff;">
+                            {% else %}
+                                <div class="imageplaceholder">No images available</div>
+                            {% endif %}
+                        </div>
+                        <div class="col-lg-8 col-sm-6">
+                            <h3>{{ product.product }}</h3>
+                            <div>
+                                <p><strong>Product description: </strong>{{ product.description }}</p>
+                                <p><strong>Price: </strong> &euro;{{ product.price }}</p>
+
+
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    {% csrf_token %}
+                    {{ form|as_bootstrap }}
+                    <div class="form-group">
+                        <input class="btn btn-success" id="submit_payment_btn" name="commit" type="submit"
+                               value="Submit Payment">
+                    </div>
+                </form>
+        </div>
+    </div>
+
+    </div>
+{% endblock %}

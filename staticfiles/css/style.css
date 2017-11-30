@@ -98,3 +98,9 @@ background: #fff none repeat scroll 0 0;
     color:#232323;
     font-family:raleway;
 }
+
+#search-results{
+    background-color: #eee;
+    border: 1px solid #999;
+    padding: 10px;
+}

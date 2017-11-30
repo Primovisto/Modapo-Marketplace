@@ -1,7 +1,5 @@
 
-.menu-nav{
-	margin-bottom:30px;
-}
+/* Owl Carousel Styles*/
 
 .owl-carousel .item img {
 
@@ -68,8 +66,135 @@ background: #fff none repeat scroll 0 0;
             font-weight: bold;
         }
 
+/* Header Section Styles*/
+
+.top-header{
+    height:35px;
+    border-bottom:1px solid #eee
+}
+
+.top-header-links{
+    text-align:right;
+    position: relative;
+    top: 8px;
+}
+
+.top-header-link{
+    color:#575757;
+    font-family:raleway;
+    margin:0 5px;
+}
+
+.header-logo{
+    margin-top:40px;
+}
+
+.header-logo-link img{
+    display:block;
+     margin:auto;
+}
+
+nav.menu-nav{
+    margin-bottom:30px;
+}
+
+nav .menu{
+    font-family:oswald;
+    font-weight:600;
+    font-size:16px;
+    text-decoration:none;
+    text-transform: uppercase;
+}
+
+nav .menu-list{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top:35px;
+    margin-left:65px;
+    z-index:99999;
+    color:#232323;
+}
+nav .menu-list li{
+    margin:0 20px;
+}
+
+nav .menu-list li a{
+    color:#232323;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+}
+
+.menu-cart-search-btns{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top:35px;
+    position:absolute;
+    right:0;
+    z-index:99999;
+}
+
+.menu-cart-search-btns .cart-icon{
+    margin-right:10px;
+}
+
+.menu-cart-search-btns .search-icon{
+    margin:0 5px;
+    font-size:17px;
+}
+
+.menu-cart-search-btns .search-icon a{
+color:#232323;
+font-family:raleway;
+}
+
+.menu-cart-search-btns .search-icon i{
+margin-right:6px;
+}
+
+.responsive-links{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.responsive-header{
+    margin-bottom:20px;
+}
+
+
+.header-hamburger.navbar-toggle{
+    margin-left:15px;
+    margin-top:0;
+    margin-right:0;
+}
+
+.nav>li>a{
+    color:#232323;
+    font-family:raleway;
+}
+
+/* Search Section Styles*/
+
+#search-results{
+    background-color: #eee;
+    border: 1px solid #999;
+    padding: 10px;
+}
+
+
+/* Suggested Products Section Styles*/
 
 .suggestion-header h1{
+    color:#232323;
+    text-align:center;
+    margin:60px 0 40px 0;
+    font-weight:100;
+    font-size:28px;
     font-family:raleway;
 }
 
@@ -84,17 +209,3 @@ background: #fff none repeat scroll 0 0;
 }
 
 
-.responsive-header{
-    margin-bottom:20px;
-}
-
-.header-hamburger.navbar-toggle{
-    margin-left:15px;
-    margin-top:0;
-    margin-right:0;
-}
-
-.nav>li>a{
-    color:#232323;
-    font-family:raleway;
-}

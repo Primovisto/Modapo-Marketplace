@@ -1,5 +1,24 @@
 {% extends "base.html" %}
 {% block content %}
-    <h2>Success!</h2>
-    <p>You are logged in as {{ user.email }} </p>
+    <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-12">
+
+            </div>
+            <div class="col-lg-9 col-md-8 col-sm-12">
+                <p><strong>Username: </strong>{{ user.username }}</p>
+                <p><strong>Email address: </strong>{{ user.email }}</p>
+
+                <p><strong>My Products:</strong></p>
+                {% for product in products %}
+                    {% if user.id == product.seller_id %}
+                        <p><strong>Product title: </strong>{{ product.product}}</p>
+                        <p><strong>Product Price: </strong>&euro;{{ product.price}}</p>
+                        <button class="btn btn-success" onclick="location.href='{% url 'edit' product.id %}'">Edit
+                            Product
+                        </button>
+                        <hr>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
 {% endblock %}

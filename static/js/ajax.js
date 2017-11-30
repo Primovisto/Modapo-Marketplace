@@ -25,7 +25,6 @@ function searchSuccess(data){
 
 
  $(function() {
-
 	$( ".opensearch" ).on( 'click', tapHandler );
 
 	function tapHandler( event ) {

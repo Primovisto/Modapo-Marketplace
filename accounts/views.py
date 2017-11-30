@@ -5,6 +5,7 @@ from accounts.forms import UserRegistrationForm, UserLoginForm
 from django.contrib.auth.decorators import login_required
 from django.template.context_processors import csrf
 from django.conf import settings
+from products.models import Product
 import datetime
 import stripe
 
@@ -46,9 +47,10 @@ def register(request):
     return render(request, 'register.html', args)
 
 
-@login_required(login_url='/login/')
+@login_required(login_url='/login?next=profile')
 def profile(request):
-    return render(request, 'profile.html')
+    products = Product.objects.all().order_by('-created_date')
+    return render(request, "profile.html", {'products': products})
 
 
 def login(request):

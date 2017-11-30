@@ -3,16 +3,14 @@ from products.models import Product
 
 
 # Create your views here.
-def get_suggested(request):
-    products = Product.objects.all().order_by('-id')[:8]
-    return render(request, "index.html", {"products": products})
-
-
-def product_page(request, id):
-    product = get_object_or_404(Product, pk=id)
-    product.views += 1
-    product.save()
-    return render(request, "products/productpage.html", {'product': product})
+def index(request):
+    """Home page"""
+    latest_products = Product.objects.all().order_by('-id')[:4]
+    all_products = Product.objects.all()
+    return render(request, "index.html", {
+        "latest_products": latest_products,
+        "all_products": all_products
+    })
 
 
 def search_items(request):

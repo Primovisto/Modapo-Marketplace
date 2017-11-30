@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Total Price</th>
+        </tr>
+        {% for product in cart %}
+        <tr>
+            <td>{{ product.product.name }}</td>
+            <td>{{ product.quantity }}</td>
+            <td>{{ product.total_price }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

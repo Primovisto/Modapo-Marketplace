@@ -2,6 +2,10 @@
 from __future__ import unicode_literals
 from django.db import models
 from django.utils import timezone
+from django.conf import settings
+
+
+User = settings.AUTH_USER_MODEL
 
 
 # Create your models here.
@@ -23,3 +27,5 @@ class Product(models.Model):
 
     def __unicode__(self):
         return self.product
+
+

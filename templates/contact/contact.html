@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load bootstrap_tags %}
+{% load staticfiles %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                 <form role="form" action="{% url 'contact'%}" method="post" novalidate>
+                    <legend>Have a question? &nbsp;<strong>Send us a message!</strong></legend>
+                    {% csrf_token %}
+                    {{ form | as_bootstrap }}
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                    <p>{{ field }}</p>
+                </form>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+    </div>
+{% endblock %}

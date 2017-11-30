@@ -22,6 +22,7 @@ from products import urls as products_urls
 from checkout import urls as checkout_urls
 from accounts import urls as accounts_urls
 from home.views import index, search_items
+from contact import urls as contact_urls
 
 
 urlpatterns = [
@@ -33,6 +34,7 @@ urlpatterns = [
     url(r'^$', index, name='index'),
     url(r'^checkout/', include(checkout_urls)),
     url(r'^products/search/$', search_items, name='search'),
+    url(r'^contact/', include(contact_urls)),
 
 
 ]

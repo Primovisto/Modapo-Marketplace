@@ -1,7 +1,9 @@
+{% extends 'base.html' %}
 {% load carton_tags %}
 <html>
 <body>
-
+{% block content %}
+<div class="box">
 <h1>Shopping Cart</h1>
 
 {% get_cart as cart %}
@@ -17,11 +19,13 @@
         <td>{{ item.product }}</td>
         <td>{{ item.quantity }}</td>
         <td>{{ item.subtotal }}</td>
+        <td><a class="fa fa-trash-o" aria-hidden="true" href="{% url "shopping-cart-remove" %}?id={{ item.product.id }}"></a></td>
     </tr>
         {% endfor %}
     </table>
 
     Total: {{ cart.total }}
-
+</div>
+{% endblock %}
 </body>
 </html>

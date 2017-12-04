@@ -32,7 +32,7 @@ def add_new_product(request):
     return render(request, 'products/productform.html', {'form': form})
 
 
-@login_required(login_url="accounts/login?next=products/edit/")
+@login_required(login_url="/accounts/login?next=products/edit/")
 def edit_product(request, id):
     product = get_object_or_404(Product, pk=id)
     if request.method == "POST":

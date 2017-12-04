@@ -36,6 +36,9 @@ STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE', 'pk_test_BXMhGZbzUnHrO4wR2Q
 STRIPE_SECRET = os.getenv('STRIPE_SECRET', 'sk_test_L2u1PAnN0QLTVcbLRes1qB2W')
 
 
+CART_PRODUCT_MODEL = 'products.models.Product'
+
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -48,14 +51,15 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'django_forms_bootstrap',
     'disqus',
-    'cart',
+    'carton',
+    'shopping',
+    'products',
     'checkout',
     'contact',
     'debug_toolbar',
     'tinymce',
     'emoticons',
     'home',
-    'products',
     'accounts',
     'threads',
     'blog',

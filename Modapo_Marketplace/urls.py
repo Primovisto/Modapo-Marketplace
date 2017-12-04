@@ -23,7 +23,8 @@ from checkout import urls as checkout_urls
 from accounts import urls as accounts_urls
 from home.views import index, search_items
 from contact import urls as contact_urls
-from cart import urls as cart_urls
+from shopping import urls as shopping_urls
+
 
 urlpatterns = [
 
@@ -35,7 +36,7 @@ urlpatterns = [
     url(r'^checkout/', include(checkout_urls)),
     url(r'^products/search/$', search_items, name='search'),
     url(r'^contact/', include(contact_urls)),
-    url(r'^cart/', include(cart_urls)),
+    url(r'^shopping-cart/', include(shopping_urls)),
 
 
 ]

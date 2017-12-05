@@ -26,7 +26,7 @@
                 <p>
                     <button class="btn btn-success" onclick="location.href='{% url 'products' %}'">Return to all products</button>
                     <button class="btn btn-success" onclick="location.href='{% url "shopping-cart-add" %}?id={{product.id}}'">Add to cart</button>
-                    <button class="btn btn-success">Buy it now</button>
+                    <button class="btn btn-success" onclick="location.href='{% url 'pay_now_stripe' product.id %}'">Buy it now</button>
                 </p>
       </div>
     </div>

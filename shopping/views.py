@@ -1,11 +1,11 @@
 from django.http import HttpResponse
 from django.contrib import messages, auth
 from django.core.urlresolvers import reverse
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from shopping.forms import CheckoutForm
 from django.template.context_processors import csrf
 from django.conf import settings
-
+from django.contrib.auth.decorators import login_required
 import datetime
 import stripe
 from carton.cart import Cart
@@ -30,39 +30,34 @@ def show(request):
     return render(request, 'shopping/show-cart.html')
 
 
-def checkout(request):
+def pay_now(request, id):
     if request.method == 'POST':
         form = CheckoutForm(request.POST)
         if form.is_valid():
             try:
+                products = get_object_or_404(Product, pk=id)
                 customer = stripe.Charge.create(
                     amount=int(Product.price * 100),
-                    currency="EUR",
-                    description=form.cleaned_data['email'],
+                    currency='EUR',
+                    description=Product.product,
                     card=form.cleaned_data['stripe_id'],
                 )
-                if customer.paid:
-                    form.save()
-                    user = auth.authenticate(email=request.POST.get('email'),
-                                             password=request.POST.get('password1'))
-                    if user:
-                        auth.login(request, user)
-                        messages.success(request, "You have successfully registered")
-                        return redirect(reverse('profile'))
-                    else:
-                        messages.error(request, "unable to log you in at this time!")
-                else:
-                    messages.error(request, "We were unable to take a payment with that card!")
             except stripe.error.CardError, e:
-                messages.error(request, "Your card was declined!")
+                messages.error(request, 'Your card was declined')
+
+            if customer.paid:
+                messages.success(request, "You have successfully paid")
+                return redirect(reverse('home'))
+            else:
+                messages.error(request, "Unable to take your payment")
+        else:
+            messages.error(request, "Unable to take your payment with that card")
     else:
-        today = datetime.date.today()
         form = CheckoutForm()
-
-    args = {'form': form, 'publishable': settings.STRIPE_PUBLISHABLE}
+        products = get_object_or_404(Product, pk=id)
+    args = {'form': form, 'publishable': settings.STRIPE_PUBLISHABLE, 'products': products}
     args.update(csrf(request))
-
-    return render(request, 'shopping/show-cart.html', args)
+    return render(request, 'checkout.html', args)
 
 
 

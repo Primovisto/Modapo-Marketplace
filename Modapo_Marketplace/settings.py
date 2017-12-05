@@ -25,7 +25,7 @@ SECRET_KEY = '!li99$$3!3f@zutuex5fn6lwtokurb5x^&@s^y)s6=sw$)ubws'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['modapomarketplace.herokuapp.com', '127.0.0.1', 'localhost']
 
 SITE_ID = 1
 
@@ -37,8 +37,8 @@ STRIPE_SECRET = os.getenv('STRIPE_SECRET', 'sk_test_L2u1PAnN0QLTVcbLRes1qB2W')
 
 
 # PayPal Settings
-SITE_URL = 'http://127.0.0.1:8000'
-PAYPAL_NOTIFY_URL = 'http://127.0.0.1/a-very-hard-to-guess-url/'
+SITE_URL = 'modapomarketplace.herokuapp.com'
+PAYPAL_NOTIFY_URL = 'http://e1836b31.ngrok.io/a-very-hard-to-guess-url/'
 PAYPAL_RECEIVER_EMAIL = 'edward@primovisto.com'
 
 
@@ -56,7 +56,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'django_forms_bootstrap',
-    'paypal_store',
     'disqus',
     'carton',
     'shopping',
@@ -74,9 +73,7 @@ INSTALLED_APPS = [
     'polls',
 
 ]
-AUTH_USER_MODEL = 'accounts.User'
-AUTHENTICATION_BACKENDS = ('django.contrib.auth.backends.ModelBackend',
-                           'accounts.backends.EmailAuth',)
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -141,6 +138,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+AUTH_USER_MODEL = 'accounts.User'
+AUTHENTICATION_BACKENDS = ('django.contrib.auth.backends.ModelBackend',
+                           'accounts.backends.EmailAuth',)
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/

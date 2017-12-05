@@ -18,34 +18,32 @@
         <h1>Checkout</h1>
 
         <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-                <a href="{% url 'index' %}">Home</a>
-            </li>
-            <li class="breadcrumb-item active">Rent it now!</li>
+
+            <li class="breadcrumb-item active">Buy it now!</li>
         </ol>
 
         <!-- Content Row -->
         <div class="row">
             <div class="col-lg-12">
-                <form role="form" method="post" id="payment-form" action="{% url 'buy_now_stripe' product.id %}">
+                <form role="form" method="post" id="payment-form" action="{% url 'pay_now_stripe' product.id %}">
                     <div id="credit-card-errors" style="display:none">
                         <div class="alert-message block-message error" id="stripe-error-message"></div>
                     </div>
                     <div class="row adlistitem">
                         <hr>
                         <div class="col-md-4 col-sm-6">
-                            {% if advert.image %}
-                                <img class="imageplaceholder" src="{{ MEDIA_URL }}{{ product.image }}"
+                            {% if product.image %}
+                                <img class="imageplaceholder" src="/media/{{ product.image }}"
                                      style="width:300px; height: 266px; background-color: #12ABB2; color: #ffffff;">
                             {% else %}
                                 <div class="imageplaceholder">No images available</div>
                             {% endif %}
                         </div>
                         <div class="col-lg-8 col-sm-6">
-                            <h3>{{ product.product}}</h3>
+                            <h3>{{ product.product }}</h3>
                             <div>
-                                <p><strong>Item description: </strong>{{ product.description }}</p>
-                                <p><strong>Price </strong> &euro;{{ product.price }}</p>
+                                <p class="browseads"><strong>Item description: </strong>{{ product.description }}</p>
+                                <p class="browseads"><strong>Price: </strong> &euro;{{ product.price }}</p>
 
                                 <hr>
                             </div>

@@ -1,6 +1,4 @@
-# -*- coding: utf-8 -*-
-from __future__ import unicode_literals
-from django.shortcuts import render, get_object_or_404, redirect, render_to_response
+from django.shortcuts import render, get_object_or_404, redirect
 from .models import Product
 from .forms import NewProductForm
 from django.contrib.auth.decorators import login_required
@@ -46,5 +44,8 @@ def edit_product(request, id):
     else:
         form = NewProductForm(instance=product)
     return render(request, 'products/productform.html', {'form': form})
+
+
+
 
 

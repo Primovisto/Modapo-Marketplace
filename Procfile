@@ -1,0 +1,1 @@
+web: gunicorn Modapo_Marketplace.wsgi:application

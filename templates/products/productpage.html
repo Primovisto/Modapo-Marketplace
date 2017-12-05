@@ -25,7 +25,7 @@
                 <hr>
                 <p>
                     <button class="btn btn-success" onclick="location.href='{% url 'products' %}'">Return to all products</button>
-                    <button class="btn btn-success" onclick="location.href='{% url 'shopping-cart-add' %}'">Add to cart</button>
+                    <button class="btn btn-success" onclick="location.href='{% url "shopping-cart-add" %}?id={{product.id}}'">Add to cart</button>
                     <button class="btn btn-success">Buy it now</button>
                 </p>
       </div>

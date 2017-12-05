@@ -13,7 +13,7 @@ import stripe
 stripe.api_key = settings.STRIPE_SECRET
 
 
-@login_required(login_url="accounts/login?next=checkout/buy_now")
+@login_required(login_url='/accounts/login?next=checkout/buy_now')
 def buy_now(request):
     if request.method == 'POST':
         form = CheckoutForm(request.POST)
@@ -45,3 +45,5 @@ def buy_now(request):
     args.update(csrf(request))
 
     return render(request, 'checkout.html', args)
+
+

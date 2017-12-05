@@ -1,31 +1,74 @@
 {% extends 'base.html' %}
 {% load carton_tags %}
-<html>
-<body>
+{% load bootstrap_tags %}
+{% load staticfiles %}
+
+{% block head_js %}
+
+    <script src="https://js.stripe.com/v2/" type="text/javascript"></script>
+    <script type="text/javascript">
+        //<![CDATA[
+        Stripe.publishableKey = '{{ publishable }}';
+        //]]>
+    </script>
+    <script type="text/javascript" src="{% static 'js/stripe.js' %}"></script>
+
+
+{% endblock %}
+
+
 {% block content %}
+    <div class="container">
+    <div class="col-xs-12">
 <div class="box">
 <h1>Shopping Cart</h1>
 
 {% get_cart as cart %}
 
-    <table border="1">
-    <tr>
-        <th>Product</th>
-        <th>Quantity</th>
-        <th>Price</th>
+    <table border="1" style="width:60%;">
+    <tr style="width:100%;">
+        <th style="padding:5px;">Product</th>
+        <th style="padding:5px;">Quantity</th>
+        <th style="padding:5px;">Price</th>
     </tr>
     {% for item in cart.items %}
     <tr>
-        <td>{{ item.product }}</td>
-        <td>{{ item.quantity }}</td>
-        <td>{{ item.subtotal }}</td>
-        <td><a class="fa fa-trash-o" aria-hidden="true" href="{% url "shopping-cart-remove" %}?id={{ item.product.id }}"></a></td>
+        <td style="padding:20px;">{{ item.product }}</td>
+        <td style="padding:20px;">{{ item.quantity }}</td>
+        <td style="padding:20px;">&euro; {{ item.subtotal }}</td>
+        <td style="padding:20px; width:5%;"><a class="fa fa-trash-o" aria-hidden="true" href="{% url "shopping-cart-remove" %}?id={{ item.product.id }}"></a></td>
+
+
+
     </tr>
         {% endfor %}
+    <tr>
+        <td></td>
+        <td></td>
+        <td style="padding:20px;"><strong>Total: </strong>&euro; {{ cart.total }}</td>
+    </tr>
+
     </table>
 
-    Total: {{ cart.total }}
+<hr>
+
+                <form role="form" method="post" id="payment-form" action="{% url 'checkout' %}">
+                    <div id="credit-card-errors" style="display:none">
+                        <div class="alert-message block-message error" id="stripe-error-message"></div>
+                    </div>
+
+                    <legend>Pay Now!</legend>
+
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <div class="form-group">
+                        <input class="btn btn-success" id="submit_payment_btn" name="commit" type="submit"
+                               value="Submit Payment">
+                    </div>
+                </form>
 </div>
+</div>
+    </div>
+
 {% endblock %}
-</body>
-</html>
+

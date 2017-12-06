@@ -14,10 +14,10 @@
                 <a href="{% url 'products' %}" style="color:#333;">Browse Products</a></li>
         </ol>
     <div class="row">
-            <div class="col-md-6" style="margin-top:100px;">
+            <div class="col-md-6" style="margin-top:20px;">
                 {% if product.image %}
                     <img class="#" src="/media/{{ product.image }}"
-                         style="width:400px; height: 300px;  color: #ffffff;"/>
+                         style="width:450px; height: 350px;  color: #ffffff;"/>
                 {% else %}
                     <div class="#">No images</div>
                 {% endif %}

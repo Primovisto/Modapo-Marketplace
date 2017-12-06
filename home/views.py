@@ -6,10 +6,10 @@ from products.models import Product
 def index(request):
     """Home page"""
     latest_products = Product.objects.all().order_by('-id')[:4]
-    all_products = Product.objects.all()
+    suggested_products = Product.objects.all().reverse()[:12]
     return render(request, "index.html", {
         "latest_products": latest_products,
-        "all_products": all_products
+        "suggested_products": suggested_products
     })
 
 

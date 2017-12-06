@@ -5,7 +5,7 @@
     <div class="slider-area">
     <div class="slider-active owl-carousel">
         <div class="item">
-            <img src="https://smhttp-ssl-33667.nexcesscdn.net/manual/wp-content/uploads/2016/07/Adidas-trainers-metallic-grey-1170x547.jpg" />
+            <img src="http://i68.tinypic.com/2ibj63b.png" />
         </div>
         <div class="item">
             <img src="http://www.theskinnybeep.com/wp-content/uploads/2010/10/Brunch-Wrangler-Lomo-October-Milan-2010-31.jpg" />
@@ -22,28 +22,36 @@
             <li class="breadcrumb-item active" style="font-family:raleway;">Browse Products</li>
         </ol>
 
+<div class="container">
+        <div class="row">
+            <div class="col-xs-12 catalogue-header">
+                <h1>Products Catalogue</h1>
+            </div>
+        </div>
+    </div>
+
         <!-- Content Row -->
 <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
+
                 {% for product in products %}
 
-
                         <div class="col-lg-4 col-sm-12">
+                        <a style="cursor:pointer; text-decoration:none;" onclick="location.href='{% url 'productpage' product.id %}'">
                             {% if product.image %}
-                                <img src="/media/{{ product.image }}" style="width:350px; height: 266px;"/>
+                                <img class="img-responsive" src="/media/{{ product.image }}" style="width:350px; height: 266px; margin-top:30px;"/>
                             {% else %}
                                 <div class="">No images available</div>
                             {% endif %}
-                        <h3 style="text-align: center;">{{ product.product}}</h3>
+                        <h3 style=" text-align:center; color:#333; font-family: barlow semi condensed;">{{ product.product}}</h3>
                             <div>
+                                <p class="" style="color:#333; font-family: barlow semi condensed;"><strong>Seller:</strong> {{ product.seller }}</p>
+                                <p class="" style="color:#333;font-family: barlow semi condensed;"><strong>Price:</strong> € {{ product.price }}</p>
 
-                                <p class="">€ {{ product.price }}</p>
-                                <hr>
-                                <p><button class="btn btn-success" onclick="location.href='{% url 'productpage' product.id %}'">View product</button>
-                                <a href="{% url "shopping-cart-add" %}?id={{product.id}}" class="btn btn-success">Add to cart</a>
-                                </p>
+
                             </div>
+                        </a>
                         </div>
 
                 {% endfor %}
@@ -52,5 +60,5 @@
         </div>
         <!-- End of Content -->
 </div>
-
+</div>
 {% endblock %}

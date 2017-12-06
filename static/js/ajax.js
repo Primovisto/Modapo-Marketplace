@@ -30,7 +30,7 @@ function searchSuccess(data){
 	function tapHandler( event ) {
 	  $('.search_field').slideToggle();
 	  setTimeout(function(){
-		 $('#search').focus().tap();
+		 $('#search').focus();
 		},0);
 	}
 

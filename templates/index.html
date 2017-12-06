@@ -5,7 +5,7 @@
 <div class="slider-area">
     <div class="slider-active owl-carousel">
         <div class="item">
-            <img src="https://hdwallsource.com/img/2017/3/fashion-girl-model-wallpaper-59926-61719-hd-wallpapers.jpg" />
+            <a href="{% url 'products' %}"><img src="http://i63.tinypic.com/2a4tgmq.png" /></a>
         </div>
         <div class="item">
             <img src="http://wearme.fashion/wp-content/uploads/2015/04/7012343-building-fashion-girl-model-photo-1.jpg" />
@@ -34,7 +34,7 @@
                 <img src="/media/{{ product.image }}" style="width:250px; height: 210px;" /> {% else %}
             <div class="">No images available</div>
                 {% endif %}
-                <h3>{{ product.product }}</h3>
+                <h3 style="color:#333; font-family: barlow semi condensed; font-size:18px;">{{ product.product }}</h3>
             </div>
         </a>
     </div>
@@ -49,7 +49,7 @@
         <div class="container">
             <div class="row">
                 <div class="suggestion-header col-xs-12">
-                    <h1>All Products</h1>
+                    <h1>Suggested Products</h1>
                 </div>
             </div>
         </div>
@@ -60,7 +60,7 @@
     <div class="row">
         <div class="col-xs-12">
 
-    {% for product in all_products %}
+    {% for product in suggested_products %}
          <div class="col-sm-3">
 
             <a style="cursor:pointer; text-decoration:none;" onclick="location.href='{% url 'productpage' product.id %}'">
@@ -69,7 +69,7 @@
                     <img src="/media/{{ product.image }}" style="width:250px; height: 210px;" /> {% else %}
                 <div class="">No images available</div>
                     {% endif %}
-                    <h3>{{ product.product }}</h3>
+                    <h3 style="color:#333; font-family: barlow semi condensed; font-size:18px;">{{ product.product }}</h3>
                 </div>
             </a>
 
@@ -86,15 +86,5 @@
         {% csrf_token %}
         {% endblock %}
 
-<hr>
-  <footer style="text-align: center;" >
-      <div class="container">
-          <div class="row">
-              <div class="col-xs-12">
-                  <p>&copy; Copyright 2017 Ed Stack</p>
-              </div>
-          </div>
-      </div>
-  </footer>
 </section>
 {% endblock %}

@@ -2,10 +2,19 @@
 {% load static from staticfiles %}
 {% load bootstrap_tags %}
 {% block content %}
+    <div class="maincontent" style="border-top:4px solid #6aefcc;margin-top:20px;padding:20px;">
     <div class="container">
 
-        <!-- Page Heading/Breadcrumbs -->
-        <h1>Create Product</h1>
+        <!-- Breadcrumbs -->
+        <ol class="breadcrumb" style="background-color:#fff;text-align:center;">
+            <li class="breadcrumb-item" style="font-family:raleway;">
+                <a href="{% url 'index' %}">Home</a>
+            </li>
+            <li class="breadcrumb-item" style="font-family:raleway;">
+                <a href="{% url 'profile' %}">My Profile</a>
+            </li>
+            <li class="breadcrumb-item active" style="font-family:raleway;">Add Product</li>
+        </ol>
 
         <!-- Content Row -->
         <div class="row">
@@ -18,5 +27,6 @@
             </div>
         </div>
         <!-- End of Content -->
+    </div>
     </div>
 {% endblock %}

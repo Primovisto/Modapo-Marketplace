@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <link href="https://fonts.googleapis.com/css?family=Raleway|Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Dosis:500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway:200" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/cerulean/bootstrap.min.css">
     <link rel="stylesheet" href="{% static "css/font-awesome-4.7.0/css/font-awesome.css" %}">
@@ -19,8 +20,6 @@
     <script src="/static/js/script.js"></script>
     <script src="/static/js/ajax.js"></script>
     <script src="/static/js/owl.carousel.min.js"></script>
-
-
     {% block head_js %}{% endblock head_js %}
 </head>
 <body>
@@ -88,19 +87,19 @@
         </button>
                 </div>
                 <ul id="myCollapsingList" class="nav navbar-nav navbar-right collapse navbar-collapse">
-                <li class="app-nav__list-item"><a href="#">Home</a></li>
-                <li><a href="#">Browse Products</a></li>
-                <li><a href="#">Sell on Modaapo</a></li>
-                <li><a href="#">Cart</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#"></a></li>
+                <li class="app-nav__list-item"><a href="/">Home</a></li>
+                <li><a href="{% url 'products' %}">Browse Products</a></li>
+                <li><a href="{% url 'new' %}">Sell on Modapo</a></li>
+                <li><a href="{% url 'shopping-cart-show' %}">Cart</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+
             </ul>
                 <div class="col-xs-5 visible-xs invisible-sm">
                     <a href="#"><img src="http://i68.tinypic.com/16j387a.jpg" style="display:block; margin:auto;" height="40" width="140"></a>
                 </div>
                 <div class="col-xs-5">
                     <ul class="responsive-links visible-xs invisible-sm invisible-md invisible-lg">
-                        <li><a href="#"><img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-heart-outline-128.png" height="30" width="30"></a>
+                        <li>
                             <a href="#"><img src="http://icons.iconarchive.com/icons/icons8/ios7/512/Ecommerce-Shopping-Bag-icon.png" height="20" width="20"></a></li>
                     </ul>
                 </div>
@@ -113,6 +112,16 @@
         {% block content %} {% endblock %}
     </div>
 
+  <footer style="text-align: center; height:60px;background-color: #eee;" >
+      <div class="container">
+          <div class="row">
+              <div class="col-xs-12">
+                  <p style="margin-top:20px;">&copy; Copyright 2017 by Ed Stack for Code Institute Project</p>
+              </div>
+          </div>
+      </div>
+  </footer>
+</section>
 </body>
 
 </html>

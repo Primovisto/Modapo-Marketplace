@@ -18,7 +18,17 @@
 
 
 {% block content %}
+
+    <div class="maincontent" style="border-top:4px solid #6aefcc;margin-top:20px;padding:20px;">
     <div class="container">
+
+    <!-- Breadcrumbs -->
+        <ol class="breadcrumb" style="background-color:#fff;text-align:center;">
+            <li class="breadcrumb-item" style="font-family:raleway;">
+                <a href="{% url 'index' %}">Home</a>
+            </li>
+            <li class="breadcrumb-item active" style="font-family:raleway;">Cart</li>
+        </ol>
     <div class="col-xs-12">
 <div class="box">
 <h1>Shopping Cart</h1>
@@ -52,7 +62,7 @@
 
 <hr>
 
-                <form role="form" method="post" id="payment-form" action="{% url 'checkout' %}">
+                <form role="form" method="post" id="payment-form" action="{% url 'cart' %}">
                     <div id="credit-card-errors" style="display:none">
                         <div class="alert-message block-message error" id="stripe-error-message"></div>
                     </div>
@@ -68,6 +78,7 @@
                 </form>
 </div>
 </div>
+    </div>
     </div>
 
 {% endblock %}

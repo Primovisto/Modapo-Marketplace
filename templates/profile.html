@@ -1,11 +1,22 @@
 {% extends "base.html" %}
 {% block content %}
+<div class="maincontent" style="border-top:4px solid #6aefcc;margin-top:20px;padding:20px;">
+    <div class="container">
+
+    <!-- Breadcrumbs -->
+
+        <ol class="breadcrumb" style="background-color:#fff;text-align:center;">
+            <li class="breadcrumb-item" style="font-family:raleway;">
+                <a href="{% url 'index' %}">Home</a>
+            </li>
+            <li class="breadcrumb-item active" style="font-family:raleway;">My Profile</li>
+        </ol>
     <div class="row">
             <div class="col-lg-3 col-md-4 col-sm-12">
 
             </div>
             <div class="col-lg-9 col-md-8 col-sm-12">
-                <p><strong>Username: </strong>{{ user.username }}</p>
+                <p><strong>Username: </strong>{{ user.email }}</p>
                 <p><strong>Email address: </strong>{{ user.email }}</p>
 
                 <p><strong>My Products:</strong></p>
@@ -21,4 +32,6 @@
                 {% endfor %}
             </div>
         </div>
+    </div>
+</div>
 {% endblock %}

@@ -1,26 +1,23 @@
 {% extends 'base.html' %}
-{% load static from staticfiles %}
+{% load staticfiles %}
 {% load bootstrap_tags %}
 
 {% block head_js %}
-    <script src="https://js.stripe.com/v2/" type="text/javascript"></script>
-    <script type="text/javascript">
-        //<![CDATA[
-        Stripe.publishableKey = '{{ publishable }}';
-        //]]>
-    </script>
-    <script type="text/javascript" src="{% static 'js/stripe.js' %}"></script>
+  <script src="https://js.stripe.com/v2/" type="text/javascript"></script>
+  <script type="text/javascript">
+      //<![CDATA[
+      Stripe.publishableKey = '{{ publishable }}';
+      //]]>
+  </script>
+  <script type="text/javascript" src="{% static 'js/stripe.js' %}"></script>
 {% endblock %}
 
 {% block content %}
-    <!-- Page Heading/Breadcrumbs -->
     <div class="container">
         <h1>Checkout</h1>
-
-        <ol class="breadcrumb">
-
+<ol>
             <li class="breadcrumb-item active">Buy it now!</li>
-        </ol>
+      </ol>
 
         <!-- Content Row -->
         <div class="row">
@@ -29,7 +26,7 @@
                     <div id="credit-card-errors" style="display:none">
                         <div class="alert-message block-message error" id="stripe-error-message"></div>
                     </div>
-                    <div class="row adlistitem">
+                    <div class="row">
                         <hr>
                         <div class="col-md-4 col-sm-6">
                             {% if product.image %}
@@ -42,8 +39,8 @@
                         <div class="col-lg-8 col-sm-6">
                             <h3>{{ product.product }}</h3>
                             <div>
-                                <p class="browseads"><strong>Item description: </strong>{{ product.description }}</p>
-                                <p class="browseads"><strong>Price: </strong> &euro;{{ product.price }}</p>
+                                <p><strong>Item description: </strong>{{ product.description }}</p>
+                                <p><strong>Price: </strong> &euro;{{ product.price }}</p>
 
                                 <hr>
                             </div>

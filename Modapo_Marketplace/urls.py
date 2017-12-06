@@ -25,7 +25,6 @@ from home.views import index, search_items
 from contact import urls as contact_urls
 from shopping import urls as shopping_urls
 from django.conf.urls import url, include
-from paypal.standard.ipn import urls as paypal_urls
 
 
 urlpatterns = [
@@ -39,7 +38,7 @@ urlpatterns = [
     url(r'^products/search/$', search_items, name='search'),
     url(r'^contact/', include(contact_urls)),
     url(r'^shopping-cart/', include(shopping_urls)),
-    url(r'^a-very-hard-to-guess-url/', include(paypal_urls)),
+
 ]
 
 

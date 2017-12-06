@@ -44,7 +44,6 @@ PAYPAL_RECEIVER_EMAIL = 'edward@primovisto.com'
 
 CART_PRODUCT_MODEL = 'products.models.Product'
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -56,21 +55,19 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'django_forms_bootstrap',
+    'accounts',
     'disqus',
     'carton',
     'shopping',
     'products',
-    'paypal.standard.ipn',
     'checkout',
     'contact',
     'debug_toolbar',
     'tinymce',
     'emoticons',
     'home',
-    'accounts',
     'threads',
     'blog',
-    'polls',
 
 ]
 
@@ -139,8 +136,12 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 AUTH_USER_MODEL = 'accounts.User'
-AUTHENTICATION_BACKENDS = ('django.contrib.auth.backends.ModelBackend',
-                           'accounts.backends.EmailAuth',)
+
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.ModelBackend',
+    'accounts.backends.EmailAuth',
+)
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
@@ -170,7 +171,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "static"),  # static directory at the project level
+   os.path.join(BASE_DIR, "static"),
 )
 
 # tinymce settings

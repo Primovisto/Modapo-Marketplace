@@ -13,7 +13,17 @@
 {% endblock %}
 
 {% block content %}
+    <div class="maincontent" style="border-top:4px solid #6aefcc;margin-top:20px;padding:20px;">
     <div class="container">
+
+    <!-- Breadcrumbs -->
+        <ol class="breadcrumb" style="background-color:#fff;text-align:center;">
+            <li class="breadcrumb-item" style="font-family:raleway;">
+                <a href="{% url 'index' %}">Home</a>
+            </li>
+            <li class="breadcrumb-item active" style="font-family:raleway;">Register</li>
+        </ol>
+
   <form role="form" method="post" id="register-form" action="{% url 'register' %}">
     <div id="credit-card-errors" style="display:none">
       <div class="alert-message block-message error" id="stripe-error-message"></div>
@@ -26,5 +36,6 @@
       <input class="btn btn-primary" id="validate_card_btn" name="commit" type="submit" value="Validate Credit Card">
     </div>
   </form>
+     </div>
     </div>
 {% endblock %}

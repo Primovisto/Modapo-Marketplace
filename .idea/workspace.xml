@@ -2,148 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0af035c4-4ef3-469a-9450-6c43555c612c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/Whoosh-2.7.4.dist-info/DESCRIPTION.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/Whoosh-2.7.4.dist-info/INSTALLER" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/Whoosh-2.7.4.dist-info/METADATA" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/Whoosh-2.7.4.dist-info/RECORD" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/Whoosh-2.7.4.dist-info/WHEEL" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/Whoosh-2.7.4.dist-info/metadata.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/Whoosh-2.7.4.dist-info/top_level.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/Whoosh-2.7.4.dist-info/zip-safe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/analysis/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/analysis/acore.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/analysis/analyzers.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/analysis/filters.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/analysis/intraword.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/analysis/morph.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/analysis/ngrams.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/analysis/tokenizers.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/automata/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/automata/fsa.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/automata/glob.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/automata/lev.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/automata/nfa.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/automata/reg.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/classify.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/codec/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/codec/base.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/codec/memory.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/codec/plaintext.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/codec/whoosh3.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/collectors.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/columns.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/compat.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/externalsort.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/fields.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/filedb/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/filedb/compound.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/filedb/filestore.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/filedb/filetables.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/filedb/gae.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/filedb/structfile.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/formats.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/highlight.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/idsets.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/index.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/lang/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/lang/dmetaphone.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/lang/isri.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/lang/lovins.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/lang/morph_en.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/lang/paicehusk.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/lang/phonetic.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/lang/porter.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/lang/porter2.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/lang/snowball/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/lang/snowball/bases.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/lang/snowball/danish.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/lang/snowball/dutch.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/lang/snowball/english.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/lang/snowball/finnish.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/lang/snowball/french.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/lang/snowball/german.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/lang/snowball/hungarian.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/lang/snowball/italian.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/lang/snowball/norwegian.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/lang/snowball/portugese.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/lang/snowball/romanian.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/lang/snowball/russian.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/lang/snowball/spanish.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/lang/snowball/swedish.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/lang/stopwords.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/lang/wordnet.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/legacy.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/matching/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/matching/binary.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/matching/combo.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/matching/mcore.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/matching/wrappers.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/multiproc.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/qparser/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/qparser/common.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/qparser/dateparse.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/qparser/default.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/qparser/plugins.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/qparser/syntax.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/qparser/taggers.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/query/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/query/compound.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/query/nested.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/query/positional.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/query/qcolumns.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/query/qcore.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/query/ranges.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/query/spans.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/query/terms.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/query/wrappers.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/reading.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/scoring.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/searching.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/sorting.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/spelling.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/support/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/support/base85.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/support/bench.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/support/charset.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/support/levenshtein.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/support/relativedelta.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/support/unicode.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/system.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/util/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/util/cache.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/util/filelock.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/util/loading.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/util/numeric.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/util/numlists.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/util/testing.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/util/text.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/util/times.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/util/varints.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/util/versions.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/whoosh/writing.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/paypal_store/admin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/paypal_store/apps.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/paypal_store/models.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/paypal_store/tests.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/paypal_store/views.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/requirements" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/shopping/templates/shopping/checkout.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/paypal_store/__init__.py" afterPath="$PROJECT_DIR$/requirements.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/paypal_store/migrations/__init__.py" afterPath="$PROJECT_DIR$/runtime.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shopping/templates/shopping/empty-cart.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/polls/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/polls/admin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/polls/apps.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/polls/forms.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/polls/migrations/0001_initial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/polls/migrations/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/polls/models.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/polls/tests.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Modapo_Marketplace/settings.py" afterPath="$PROJECT_DIR$/Modapo_Marketplace/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Modapo_Marketplace/urls.py" afterPath="$PROJECT_DIR$/Modapo_Marketplace/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Procfile" afterPath="$PROJECT_DIR$/Procfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accounts/forms.py" afterPath="$PROJECT_DIR$/accounts/forms.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accounts/views.py" afterPath="$PROJECT_DIR$/accounts/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/checkout/forms.py" afterPath="$PROJECT_DIR$/checkout/forms.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/checkout/templates/checkout.html" afterPath="$PROJECT_DIR$/checkout/templates/checkout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/checkout/urls.py" afterPath="$PROJECT_DIR$/checkout/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/checkout/views.py" afterPath="$PROJECT_DIR$/checkout/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping/templates/shopping/show-cart.html" afterPath="$PROJECT_DIR$/shopping/templates/shopping/show-cart.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping/urls.py" afterPath="$PROJECT_DIR$/shopping/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping/views.py" afterPath="$PROJECT_DIR$/shopping/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/style.css" afterPath="$PROJECT_DIR$/static/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/contact/contact.html" afterPath="$PROJECT_DIR$/templates/contact/contact.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/login.html" afterPath="$PROJECT_DIR$/templates/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/products/productform.html" afterPath="$PROJECT_DIR$/templates/products/productform.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/products/productpage.html" afterPath="$PROJECT_DIR$/templates/products/productpage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/products/products.html" afterPath="$PROJECT_DIR$/templates/products/products.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/profile.html" afterPath="$PROJECT_DIR$/templates/profile.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/register.html" afterPath="$PROJECT_DIR$/templates/register.html" />
     </list>
     <ignored path="Modapo_Marketplace.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -157,6 +46,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Modapo_Marketplace$0001_initial.coverage" NAME="0001_initial Coverage Results" MODIFIED="1511384997046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/threads/migrations" />
+    <SUITE FILE_PATH="coverage/Modapo_Marketplace$models.coverage" NAME="models Coverage Results" MODIFIED="1512518972604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/accounts" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -170,27 +60,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="checkout.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/checkout/templates/checkout.html">
+      <file leaf-file-name="register.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/register.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+            <state relative-caret-position="663">
+              <caret line="39" column="10" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
               <folding>
-                <element signature="e#896#916#0#HTML" expanded="true" />
-                <element signature="e#1366#1444#0#HTML" expanded="true" />
-                <element signature="e#1989#1995#0#HTML" expanded="true" />
+                <element signature="e#440#506#0#HTML" expanded="true" />
+                <element signature="e#593#641#0#HTML" expanded="true" />
+                <element signature="e#683#711#0#HTML" expanded="true" />
+                <element signature="e#831#859#0#HTML" expanded="true" />
+                <element signature="e#1006#1026#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/checkout/urls.py">
+      <file leaf-file-name="profile.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/profile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="595">
+              <caret line="35" column="6" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
               <folding>
-                <element signature="e#0#32#0" expanded="true" />
+                <element signature="e#71#137#0#HTML" expanded="true" />
+                <marker date="1512527247149" expanded="false" signature="470:490" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+              <folding>
+                <element signature="e#101#167#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -199,88 +104,85 @@
       <file leaf-file-name="productpage.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/products/productpage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Modapo_Marketplace/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="138" column="1" selection-start-line="138" selection-start-column="1" selection-end-line="138" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/accounts/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+            <state relative-caret-position="-913">
+              <caret line="8" column="95" selection-start-line="8" selection-start-column="95" selection-end-line="8" selection-end-column="95" />
               <folding>
-                <element signature="e#0#41#0" expanded="true" />
+                <element signature="e#136#189#0#HTML" expanded="true" />
+                <element signature="e#276#341#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/accounts/forms.py">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11">
-              <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+            <state relative-caret-position="124">
+              <caret line="87" column="22" selection-start-line="87" selection-start-column="22" selection-end-line="87" selection-end-column="22" />
               <folding>
-                <element signature="e#0#24#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/accounts/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
-              <folding>
-                <element signature="e#0#64#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="backends.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/accounts/backends.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6">
-              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/checkout/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
+                <element signature="n#style#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Modapo_Marketplace/urls.py">
+        <entry file="file://$PROJECT_DIR$/shopping/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="61">
-              <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
+            <state relative-caret-position="85">
+              <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
               <folding>
-                <element signature="e#652#693#0" expanded="true" />
+                <element signature="e#1114#1159#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="172">
+              <caret line="89" column="22" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="products.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/products/products.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="376">
+              <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
+              <folding>
+                <element signature="e#641#707#0#HTML" expanded="true" />
+                <element signature="e#1540#1567#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="productform.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/products/productform.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
+              <folding>
+                <element signature="e#136#202#0#HTML" expanded="true" />
+                <element signature="e#293#341#0#HTML" expanded="true" />
+                <element signature="e#383#411#0#HTML" expanded="true" />
+                <element signature="e#524#552#0#HTML" expanded="true" />
+                <element signature="e#680#708#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -293,8 +195,8 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -304,26 +206,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/contact/urls.py" />
-        <option value="$PROJECT_DIR$/templates/profile.html" />
-        <option value="$PROJECT_DIR$/products/urls.py" />
-        <option value="$PROJECT_DIR$/cart/tests.py" />
-        <option value="$PROJECT_DIR$/templates/products/cart.html" />
-        <option value="$PROJECT_DIR$/cart/models.py" />
-        <option value="$PROJECT_DIR$/cart/templatetags/carton_tags.py" />
-        <option value="$PROJECT_DIR$/cart/admin.py" />
-        <option value="$PROJECT_DIR$/cart/views.py" />
-        <option value="$PROJECT_DIR$/cart/urls.py" />
-        <option value="$PROJECT_DIR$/templates/cart/cart.html" />
         <option value="$PROJECT_DIR$/templates/cart/empty_cart.html" />
         <option value="$PROJECT_DIR$/cart/settings.py" />
         <option value="$PROJECT_DIR$/cart/module_loading.py" />
         <option value="$PROJECT_DIR$/cart/cart.py" />
-        <option value="$PROJECT_DIR$/templates/products/products.html" />
         <option value="$PROJECT_DIR$/templates/shopping/show-cart.html" />
         <option value="$PROJECT_DIR$/shopping/templates/show-cart.html" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/static/css/style.css" />
         <option value="$PROJECT_DIR$/payments/views.py" />
         <option value="$PROJECT_DIR$/shopping/forms.py" />
         <option value="$PROJECT_DIR$/paypal_store/views.py" />
@@ -331,7 +219,6 @@
         <option value="$PROJECT_DIR$/templates/paypal/paypal_return.html" />
         <option value="$PROJECT_DIR$/products/views.py" />
         <option value="$PROJECT_DIR$/products/models.py" />
-        <option value="$PROJECT_DIR$/shopping/templates/shopping/show-cart.html" />
         <option value="$PROJECT_DIR$/requirements" />
         <option value="$PROJECT_DIR$/gunicorn" />
         <option value="$PROJECT_DIR$/settings/staging.py" />
@@ -344,17 +231,32 @@
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/runtime.txt" />
         <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/shopping/views.py" />
-        <option value="$PROJECT_DIR$/shopping/urls.py" />
         <option value="$PROJECT_DIR$/shopping/templates/shopping/checkout.html" />
-        <option value="$PROJECT_DIR$/checkout/templates/checkout.html" />
         <option value="$PROJECT_DIR$/checkout/urls.py" />
-        <option value="$PROJECT_DIR$/templates/products/productpage.html" />
-        <option value="$PROJECT_DIR$/checkout/views.py" />
+        <option value="$PROJECT_DIR$/shopping/urls.py" />
+        <option value="$PROJECT_DIR$/shopping/models.py" />
         <option value="$PROJECT_DIR$/Modapo_Marketplace/urls.py" />
-        <option value="$PROJECT_DIR$/Modapo_Marketplace/settings.py" />
+        <option value="$PROJECT_DIR$/checkout/templates/checkout.html" />
+        <option value="$PROJECT_DIR$/checkout/forms.py" />
+        <option value="$PROJECT_DIR$/static/js/stripe.js" />
         <option value="$PROJECT_DIR$/accounts/views.py" />
         <option value="$PROJECT_DIR$/accounts/forms.py" />
+        <option value="$PROJECT_DIR$/accounts/models.py" />
+        <option value="$PROJECT_DIR$/Modapo_Marketplace/settings.py" />
+        <option value="$PROJECT_DIR$/checkout/views.py" />
+        <option value="$PROJECT_DIR$/shopping/templates/shopping/show-cart.html" />
+        <option value="$PROJECT_DIR$/shopping/templates/shopping/empty-cart.html" />
+        <option value="$PROJECT_DIR$/shopping/views.py" />
+        <option value="$PROJECT_DIR$/templates/contact/contact.html" />
+        <option value="$PROJECT_DIR$/templates/products/productform.html" />
+        <option value="$PROJECT_DIR$/templates/register.html" />
+        <option value="$PROJECT_DIR$/templates/profile.html" />
+        <option value="$PROJECT_DIR$/templates/login.html" />
+        <option value="$PROJECT_DIR$/static/css/style.css" />
+        <option value="$PROJECT_DIR$/templates/products/productpage.html" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/templates/products/products.html" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
       </list>
     </option>
   </component>
@@ -367,7 +269,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
+    <option name="width" value="1370" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -395,8 +297,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -462,6 +362,42 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="paypal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Modapo_Marketplace" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Modapo_Marketplace" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Modapo_Marketplace" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Modapo_Marketplace" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="contact" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -547,20 +483,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="requirements" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Modapo_Marketplace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Modapo_Marketplace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="products" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -575,7 +497,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="contact" />
+              <option name="myItemId" value="home" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -659,6 +581,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -679,7 +603,7 @@
       <recent name="C:\Users\Admin\PycharmProjects\Modapo_Marketplace\templates\cart" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.0001_initial">
+  <component name="RunManager" selected="Python.models">
     <configuration default="false" name="0001_initial" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -694,6 +618,24 @@
       <module name="Modapo_Marketplace" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/threads/migrations/0001_initial.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="models" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/accounts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Modapo_Marketplace" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/accounts/models.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -952,13 +894,15 @@
       <option name="customRunCommand" value="" />
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Django server.Modapo_Marketplace" />
       <item index="1" class="java.lang.String" itemvalue="Python.0001_initial" />
+      <item index="2" class="java.lang.String" itemvalue="Python.models" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Python.0001_initial" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Python.models" />
+        <item index="1" class="java.lang.String" itemvalue="Python.0001_initial" />
       </list>
     </recent_temporary>
   </component>
@@ -979,27 +923,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1370" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15279879" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16259542" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35188216" sideWeight="0.42133132" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35188216" sideWeight="0.5786687" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39934534" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1035,207 +979,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/shopping/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shopping/templates/shopping/show-cart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/shopping/show-cart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="91" column="29" selection-start-line="91" selection-start-column="29" selection-end-line="91" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/stripe.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="213" column="1" selection-start-line="213" selection-start-column="1" selection-end-line="213" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-161">
-          <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/checkout/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shopping/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/paypal/paypal_cancel.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/paypal/paypal_return.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paypal_store/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paypal_store/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/products/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/products/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#24#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/products/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/products/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/products/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding>
-            <element signature="e#1#33#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shopping/templates/shopping/show-cart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="61" column="36" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
-          <folding>
-            <element signature="n#style#0;n#td#2;n#tr#2;n#table#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings/staging.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="28" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements/dev">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/requirements/staging">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1243,39 +995,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/settings/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings/dev.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile.local">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="31" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/settings/base.py" />
+    <entry file="file://$PROJECT_DIR$/settings/dev.py" />
+    <entry file="file://$PROJECT_DIR$/Procfile.local" />
     <entry file="file://$PROJECT_DIR$/Modapo_Marketplace/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1283,7 +1012,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="26" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1291,7 +1019,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1299,15 +1026,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/products/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1319,17 +1037,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/urls.py">
+    <entry file="file://$PROJECT_DIR$/shopping/templates/shopping/checkout.html" />
+    <entry file="file://$PROJECT_DIR$/checkout/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#32#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/checkout/models.py">
+    <entry file="file://$PROJECT_DIR$/checkout/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkout/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1337,55 +1060,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shopping/views.py">
+    <entry file="file://$PROJECT_DIR$/checkout/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shopping/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
-            <element signature="e#0#36#0" expanded="true" />
+            <element signature="e#0#74#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/checkout/forms.py">
+    <entry file="file://$PROJECT_DIR$/Modapo_Marketplace/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shopping/templates/shopping/checkout.html">
+    <entry file="file://$PROJECT_DIR$/Modapo_Marketplace/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shopping/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        <state relative-caret-position="124">
+          <caret line="29" column="15" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#652#693#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/products/products.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/products/productpage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1394,85 +1113,296 @@
         <state relative-caret-position="102">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/checkout/templates/checkout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+        <state relative-caret-position="-255">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
-            <element signature="e#896#916#0#HTML" expanded="true" />
-            <element signature="e#1366#1444#0#HTML" expanded="true" />
-            <element signature="e#1989#1995#0#HTML" expanded="true" />
+            <element signature="e#1260#1338#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkout/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/stripe.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modapo/Lib/site-packages/django/contrib/auth/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="137" column="0" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modapo/Lib/site-packages/django/conf/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-680">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/backends.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#64#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modapo_Marketplace/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="137" column="33" selection-start-line="137" selection-start-column="33" selection-end-line="137" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#24#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkout/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-44">
+          <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/checkout/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state relative-caret-position="527">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Modapo_Marketplace/urls.py">
+    <entry file="file://$PROJECT_DIR$/products/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
-          <folding>
-            <element signature="e#652#693#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/backends.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6">
-          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        <state relative-caret-position="170">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Modapo_Marketplace/settings.py">
+    <entry file="file://$PROJECT_DIR$/shopping/templates/shopping/empty-cart.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="138" column="1" selection-start-line="138" selection-start-column="1" selection-end-line="138" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+        <state relative-caret-position="172">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#171#219#0#HTML" expanded="false" />
+            <element signature="e#261#289#0#HTML" expanded="false" />
+            <element signature="e#409#437#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/forms.py">
+    <entry file="file://$PROJECT_DIR$/shopping/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11">
-          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+        <state relative-caret-position="1547">
+          <caret line="101" column="29" selection-start-line="101" selection-start-column="29" selection-end-line="101" selection-end-column="29" />
           <folding>
-            <element signature="e#0#24#0" expanded="true" />
+            <element signature="e#0#36#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shopping/templates/shopping/show-cart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="96" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ol#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#ol#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#1;n#ol#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/contact/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
+          <folding>
+            <element signature="e#124#190#0#HTML" expanded="true" />
+            <element signature="e#277#325#0#HTML" expanded="true" />
+            <element signature="e#367#395#0#HTML" expanded="true" />
+            <element signature="e#515#543#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/products/productform.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
+          <folding>
+            <element signature="e#136#202#0#HTML" expanded="true" />
+            <element signature="e#293#341#0#HTML" expanded="true" />
+            <element signature="e#383#411#0#HTML" expanded="true" />
+            <element signature="e#524#552#0#HTML" expanded="true" />
+            <element signature="e#680#708#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="10" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
+          <folding>
+            <element signature="e#440#506#0#HTML" expanded="true" />
+            <element signature="e#593#641#0#HTML" expanded="true" />
+            <element signature="e#683#711#0#HTML" expanded="true" />
+            <element signature="e#831#859#0#HTML" expanded="true" />
+            <element signature="e#1006#1026#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="6" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
+          <folding>
+            <element signature="e#71#137#0#HTML" expanded="true" />
+            <marker date="1512527247149" expanded="false" signature="470:490" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <folding>
+            <element signature="e#101#167#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="89" column="22" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/products/productpage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-913">
+          <caret line="8" column="95" selection-start-line="8" selection-start-column="95" selection-end-line="8" selection-end-column="95" />
+          <folding>
+            <element signature="e#136#189#0#HTML" expanded="true" />
+            <element signature="e#276#341#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
+          <folding>
+            <element signature="e#1114#1159#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/products/products.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
+          <folding>
+            <element signature="e#641#707#0#HTML" expanded="true" />
+            <element signature="e#1540#1567#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shopping/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="87" column="22" selection-start-line="87" selection-start-column="22" selection-end-line="87" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

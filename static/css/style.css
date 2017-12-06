@@ -87,6 +87,7 @@ background: #fff none repeat scroll 0 0;
 
 .header-logo{
     margin-top:40px;
+    margin-right: 15px;
 }
 
 .header-logo-link img{
@@ -112,7 +113,7 @@ nav .menu-list{
     flex-wrap: wrap;
     list-style: none;
     margin-top:35px;
-    margin-left:60px;
+    margin-left:55px;
     z-index:99999;
     color:#232323;
 }
@@ -211,6 +212,13 @@ margin-right:6px;
 
 td{
     padding:20px;
+}
+
+
+ol .breadcrumb{
+
+    background-color:#fff!important;
+    text-align:center!important;
 }
 
 

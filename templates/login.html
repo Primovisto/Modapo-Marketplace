@@ -1,7 +1,15 @@
 {% extends "base.html" %}
 {% load bootstrap_tags %}
 {% block content %}
+    <div class="maincontent" style="border-top:4px solid #6aefcc;margin-top:20px;padding:20px;">
     <div class="container">
+    <!-- Breadcrumbs -->
+        <ol class="breadcrumb" style="background-color:#fff;text-align:center;">
+            <li class="breadcrumb-item" style="font-family:raleway;">
+                <a href="{% url 'index' %}">Home</a>
+            </li>
+            <li class="breadcrumb-item active" style="font-family:raleway;">login</li>
+        </ol>
     <form role="form" method="post" action="{% url 'login' %}">
         <legend>Login</legend>
         {% csrf_token %}
@@ -10,5 +18,6 @@
             <button type="submit" class="btn btn-primary">Login</button>
         </div>
     </form>
+    </div>
     </div>
 {% endblock %}

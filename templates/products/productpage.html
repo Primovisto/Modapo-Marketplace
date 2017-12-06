@@ -2,33 +2,77 @@
 {% load static from staticfiles %}
 {% load bootstrap_tags %}
 {% block content %}
+    <div class="maincontent" style="border-top:4px solid #6aefcc;margin-top:20px;">
 <div class="container">
+
+        <!-- Breadcrumbs -->
+        <ol class="breadcrumb" style="background-color:#fff;text-align:center;margin-top: 20px;">
+            <li class="breadcrumb-item" style="font-family:raleway;">
+                <a href="{% url 'index' %}" style="color:#333;">Home</a>
+            </li>
+            <li class="breadcrumb-item active" style="font-family:raleway;">
+                <a href="{% url 'products' %}" style="color:#333;">Browse Products</a></li>
+        </ol>
     <div class="row">
-            <div class="col-md-4">
-                <a href="#">
-                    <img src="#">
-                </a>
-                <p class="#"><strong>Seller: </strong></p>
-                <hr>
-</div>
-    <div class="col-md-8">
-                <h3>{{ product.product }}</h3>
+            <div class="col-md-6" style="margin-top:100px;">
                 {% if product.image %}
                     <img class="#" src="/media/{{ product.image }}"
-                         style="width:350px; height: 266px;  color: #ffffff;"/>
+                         style="width:400px; height: 300px;  color: #ffffff;"/>
                 {% else %}
                     <div class="#">No images</div>
                 {% endif %}
-                <p class=""><strong>Description: </strong>{{ product.description }}</p>
-                <p class=""><strong>Price: </strong>{{ product.price }}</p>
-                <p class=""><strong>Views: </strong> {{ product.views }}</p>
+</div>
+    <div class="col-md-6">
+                <h3 style="font-family:Barlow Semi Condensed;margin:35px 0;color:#333;font-size:36px;">{{ product.product }}</h3>
+                <p class="" style="font-family:Source Sans Pro;font-size:15px;">{{ product.description }}</p>
+                <p class="" style="font-family:Barlow Semi Condensed;font-size:36px;margin:35px 0 15px 0;color:#333;">€ {{ product.price }}</p>
+                <p class="" style="font-family:Barlow Semi Condensed;font-size:16px;color:#333;">Views: {{ product.views }}</p>
                 <hr>
                 <p>
-                    <button class="btn btn-success" onclick="location.href='{% url 'products' %}'">Return to all products</button>
-                    <button class="btn btn-success" onclick="location.href='{% url "shopping-cart-add" %}?id={{product.id}}'">Add to cart</button>
-                    <button class="btn btn-success" onclick="location.href='{% url 'pay_now_stripe' product.id %}'">Buy it now</button>
+                    <button class="btn btn--green btn--addCart" style="background-color:#6c8835; border-radius:2px; color:#fff; font-size:16px;font-family:raleway;
+    height: 60px; padding:15px 30px;max-width:60%;text-transform:uppercase;" onclick="location.href='{% url "shopping-cart-add" %}?id={{product.id}}'">Add to cart</button>
+                    <button class="btn btn--buy btn--purchase" style="background-color:#515151; border-radius:2px; color:#fff; font-size:16px;font-family:raleway;
+    height: 60px; max-width:60%;text-transform:uppercase;" onclick="location.href='{% url 'pay_now_stripe' product.id %}'">Buy it now</button>
                 </p>
       </div>
     </div>
 </div>
+    <div class="product-info" style="background-color:#fcfcfc; margin-top:50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+                    <h3 style="font-family:Barlow Semi Condensed; font-weight:600;font-size:24px;color:#333;padding:20px;">Product Info</h3>
+                    <p style="font-family:Barlow Semi Condensed; font-size:14px;color:#333; line-height:28px;padding:20px;">Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place
+                        of English to emphasise design elements over content. It's also called placeholder (or filler)
+                        text. It's a convenient tool for mock-ups. It helps to outline the visual elements of a document
+                        or presentation, eg typography, font, or layout. Lorem ipsum is mostly a part of a Latin text by
+                        the classical author and philosopher Cicero. Its words and letters have been changed by addition
+                        or removal, so to deliberately render its content nonsensical; it's not genuine, correct, or
+                        comprehensible Latin anymore. While lorem ipsum's still resembles classical Latin, it actually
+                        has no meaning whatsoever. As Cicero's text doesn't contain the letters K, W, or Z, alien to
+                        latin, these, and others are often inserted randomly to mimic the typographic appearence of
+                        European languages, as are digraphs not to be found in the original.
+                        In a professional context it often happens that private or corporate clients corder a publication
+                        to be made andpresented with the actual content still not being ready. Think of a news blog
+                        that's filled with content hourly on the day of going live. However, reviewers tend to be distracted by
+                        comprehensible content, say, a random text copied from a newspaper or the internet. </p>
+
+                </div>
+                <div class="col-xs-6">
+
+                    <h3 style="font-family:Barlow Semi Condensed; font-weight:600;font-size:24px;color:#333;padding:20px;">Brand</h3>
+                    <p style="font-family:Barlow Semi Condensed; font-size:14px;color:#333; line-height:28px;padding:20px;">Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place
+                        of English to emphasise design elements over content. It's also called placeholder (or filler)
+                        text. It's a convenient tool for mock-ups. It helps to outline the visual elements of a document
+                        or presentation, eg typography, font, or layout. Lorem ipsum is mostly a part of a Latin text by
+                        the classical author and philosopher Cicero. Its words and letters have been changed by addition
+                        or removal, so to deliberately render its content nonsensical;
+                        </p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
 {% endblock %}

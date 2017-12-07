@@ -15,14 +15,14 @@ def add(request):
     cart = Cart(request.session)
     product = Product.objects.get(id=request.GET.get('id'))
     cart.add(product, price=product.price)
-    return HttpResponse("Added")
+    return render(request, 'shopping/show-cart.html')
 
 
 def remove(request):
     cart = Cart(request.session)
     product = Product.objects.get(id=request.GET.get('id'))
     cart.remove(product)
-    return HttpResponse("Removed")
+    return render(request, 'shopping/show-cart.html')
 
 
 def show(request):

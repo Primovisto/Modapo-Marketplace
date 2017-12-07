@@ -556,7 +556,7 @@ font-family:Barlow Semi Condensed;
         display: inline !important;
     }
     .actions .btn{
-        width:36%;
+        width:30%;
         margin:1.5em 0;
     }
 
@@ -568,8 +568,8 @@ font-family:Barlow Semi Condensed;
     }
 
     table#cart thead { display: none; }
-    table#cart tbody td { display: block; padding: .6rem; min-width:320px;}
-    table#cart tbody tr td:first-child { background: #333; color: #fff; }
+    table#cart tbody td { display: block; padding: .6rem;}
+    table#cart tbody tr td:first-child { background: #fff; color: #fff; }
     table#cart tbody td:before {
         content: attr(data-th); font-weight: bold;
         display: inline-block; width: 8rem;

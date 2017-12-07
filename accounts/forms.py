@@ -1,5 +1,5 @@
 from django import forms
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import UserCreationForm, UserChangeForm
 from accounts.models import User
 
 
@@ -28,8 +28,7 @@ class UserRegistrationForm(UserCreationForm):
 
     class Meta:
         model = User
-        fields = ['email', 'password1', 'password2', 'stripe_id']
-        exclude = ['username']
+        fields = ['username', 'email', 'password1', 'password2', 'stripe_id']
 
 
 class UserLoginForm(forms.Form):
@@ -37,11 +36,12 @@ class UserLoginForm(forms.Form):
     password = forms.CharField(widget=forms.PasswordInput)
 
 
-class EditProfileForm(forms.ModelForm):
-
-        username = forms.CharField(label='username')
-        email = forms.CharField(label='email')
+class EditProfileForm(UserChangeForm):
 
         class Meta:
             model = User
-            fields = ['email', 'username']
+            fields = ('email',
+                      'username',
+                      'password',
+
+                      )

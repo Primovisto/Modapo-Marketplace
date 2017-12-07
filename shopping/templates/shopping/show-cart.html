@@ -29,57 +29,72 @@
             </li>
             <li class="breadcrumb-item active">Cart</li>
         </ol>
-    <div class="col-xs-12">
-<div class="box">
+
 <h2 style="margin:20px 0;">Shopping Cart</h2>
 
-{% get_cart as cart %}
 
-    <table border="1" style="width:60%;">
-    <tr style="width:100%;">
-        <th style="padding:5px;">Product</th>
-        <th style="padding:5px;">Quantity</th>
-        <th style="padding:5px;">Price</th>
-    </tr>
-    {% for item in cart.items %}
-    <tr>
-        <td style="padding:20px;">{{ item.product }}</td>
-        <td style="padding:20px;">{{ item.quantity }}</td>
-        <td style="padding:20px;">&euro; {{ item.subtotal }}</td>
-        <td style="padding:20px; width:5%;"><a class="fa fa-trash-o" aria-hidden="true" href="{% url "shopping-cart-remove" %}?id={{ item.product.id }}"></a></td>
+<div class="container">
+    {% get_cart as cart %}
+    <table id="cart" class="table table-hover table-condensed">
+                    <thead>
+                        <tr>
+                            <th style="width:50%">Product</th>
+                            <th style="width:10%">Price</th>
+                            <th style="width:8%">Quantity</th>
+                            <th style="width:8%">Subtotal</th>
+                            <th style="width:10%"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {% for item in cart.items %}
+                        <tr>
 
-
-
-    </tr>
-        {% endfor %}
-    <tr>
-        <td></td>
-        <td></td>
-        <td style="padding:20px;"><strong>Total: </strong>&euro; {{ cart.total }}</td>
-    </tr>
-
-    </table>
+                            <td data-th="Product">
+                                <div class="row">
+                                <div class="col-sm-2">
+                                    {% if item.product.image %}
+                                        <img src="/media/{{ item.product.image }}" class="homepage-products img-responsive" style="width:80px; height: 80px;" />
+                                    {% else %}
+                                        <div class="">No images available</div>
+                                    {% endif %}
+                                </div>
+                                    <div class="col-sm-10">
+                                        <h4 style="margin-top:30px;">{{ item.product }}</h4>
+                                    </div>
+                                </div>
+                            </td>
+                            <td data-th="Price">&euro; {{ item.subtotal }}</td>
+                            <td data-th="Quantity">
+                                {{ item.quantity }}
+                            </td>
+                            <td data-th="Subtotal" class="text-center">&euro; {{ item.subtotal }}</td>
+                            <td class="actions" data-th="">
+                                <button class="btn btn-info btn-sm" ><i class="fa fa-refresh"></i></button>
+                                <button class="btn btn-danger btn-sm" onclick="location.href='{% url "shopping-cart-remove" %}?id={{ item.product.id }}'"><i class="fa fa-trash-o"></i></button>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                    <tfoot>
+                        <tr class="visible-xs">
+                            <td class="text-center"><strong>&euro; {{ cart.total }}</strong></td>
+                        </tr>
+                        <tr>
+                            <td><a href="{% url 'products' %}" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
+                            <td colspan="2" class="hidden-xs"></td>
+                            <td class="hidden-xs text-center"><strong>Total: &euro; {{ cart.total }}</strong></td>
+                            <td><a href="#" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td>
+                        </tr>
+                    </tfoot>
+                </table>
+</div>
 
 <hr>
 
-                <form role="form" method="post" id="payment-form" action="{% url 'cart' %}">
-                    <div id="credit-card-errors" style="display:none">
-                        <div class="alert-message block-message error" id="stripe-error-message"></div>
-                    </div>
 
-                    <legend>Pay Now!</legend>
-
-                    {% csrf_token %}
-                    {{ form.as_p }}
-                    <div class="form-group">
-                        <input class="btn btn-success" id="submit_payment_btn" name="commit" type="submit"
-                               value="Submit Payment">
-                    </div>
-                </form>
 </div>
 </div>
-    </div>
-    </div>
+
 
 {% endblock %}
 

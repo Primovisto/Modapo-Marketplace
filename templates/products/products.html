@@ -37,17 +37,17 @@
 
                 {% for product in products %}
 
-                        <div class="col-lg-4 col-sm-12">
+                        <div class="col-lg-4 col-sm-6 col-xs-12">
                         <a style="cursor:pointer; text-decoration:none;" onclick="location.href='{% url 'productpage' product.id %}'">
                             {% if product.image %}
-                                <img class="img-responsive" src="/media/{{ product.image }}" style="width:350px; height: 266px; margin-top:30px;"/>
+                                <img class="img-responsive" src="/media/{{ product.image }}" style="width:350px; height: 266px; margin:30px auto 0 auto;"/>
                             {% else %}
                                 <div class="">No images available</div>
                             {% endif %}
-                        <h3 style=" text-align:center; color:#333; font-family: barlow semi condensed;">{{ product.product}}</h3>
-                            <div>
-                                <p class="" style="color:#333; font-family: barlow semi condensed;"><strong>Seller:</strong> {{ product.seller }}</p>
-                                <p class="" style="color:#333;font-family: barlow semi condensed;"><strong>Price:</strong> € {{ product.price }}</p>
+                        <h2 class="product-title">{{ product.product}}</h2>
+                            <div class="product-details">
+                                <p><strong>Seller:</strong> {{ product.seller }}</p>
+                                <p><strong>Price:</strong> € {{ product.price }}</p>
 
 
                             </div>

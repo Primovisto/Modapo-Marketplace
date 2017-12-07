@@ -23,15 +23,15 @@
     <div class="container">
 
     <!-- Breadcrumbs -->
-        <ol class="breadcrumb" style="background-color:#fff;text-align:center;">
-            <li class="breadcrumb-item" style="font-family:raleway;">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
                 <a href="{% url 'index' %}">Home</a>
             </li>
-            <li class="breadcrumb-item active" style="font-family:raleway;">Cart</li>
+            <li class="breadcrumb-item active">Cart</li>
         </ol>
     <div class="col-xs-12">
 <div class="box">
-<h1>Shopping Cart</h1>
+<h2 style="margin:20px 0;">Shopping Cart</h2>
 
 {% get_cart as cart %}
 

@@ -35,3 +35,13 @@ class UserRegistrationForm(UserCreationForm):
 class UserLoginForm(forms.Form):
     email = forms.EmailField()
     password = forms.CharField(widget=forms.PasswordInput)
+
+
+class EditProfileForm(forms.ModelForm):
+
+        username = forms.CharField(label='username')
+        email = forms.CharField(label='email')
+
+        class Meta:
+            model = User
+            fields = ['email', 'username']

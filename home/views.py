@@ -4,7 +4,6 @@ from products.models import Product
 
 # Create your views here.
 def index(request):
-    """Home page"""
     latest_products = Product.objects.all().order_by('-id')[:4]
     suggested_products = Product.objects.all().reverse()[:12]
     return render(request, "index.html", {

@@ -3,6 +3,7 @@ from django.core.urlresolvers import reverse
 from django.shortcuts import render, redirect, get_object_or_404
 from shopping.forms import CheckoutForm
 from django.template.context_processors import csrf
+from django.contrib.auth.decorators import login_required
 from products.models import Product
 from django.conf import settings
 import stripe
@@ -10,6 +11,7 @@ import stripe
 stripe.api_key = settings.STRIPE_SECRET
 
 
+@login_required(login_url="/accounts/login?next=checkout/pay_now")
 def pay_now(request, id):
     product = get_object_or_404(Product, pk=id)
     if request.method == 'POST':

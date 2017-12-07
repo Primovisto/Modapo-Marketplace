@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     'accounts',
     'disqus',
     'carton',
+    'django_gravatar',
     'shopping',
     'products',
     'checkout',
@@ -159,6 +160,16 @@ USE_TZ = True
 DISQUS_API_KEY = '6zrnagsTNKjNVXsmoWJC0zwmw7A3cB2kx4c0UlibjgrntiLgMswqathYSMn0qNrl'
 
 DISQUS_WEBSITE_SHORTNAME = 'Modapo Marketplace'
+
+
+# contact form email stuff
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+DEFAULT_FROM_EMAIL = 'ed@velabri.co'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+EMAIL_USE_TLS = False
+EMAIL_PORT = 1025
 
 
 # Static files (CSS, JavaScript, Images)

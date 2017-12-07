@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="maincontent">
+<ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="{% url 'index' %}">Home</a>
+            </li>
+            <li class="breadcrumb-item">Thanks</li>
+        </ol>
+    <div class="container">
+    <h2 style="text-align: center; margin:63px;">
+        Thanks for Contacting us. We will be in touch with you shortly!
+        <br>
+    </h2>
+
+    </div>
+</div>
+{% endblock %}

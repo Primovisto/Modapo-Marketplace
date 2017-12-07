@@ -6,16 +6,23 @@
     <div class="container">
 
     <!-- Breadcrumbs -->
-        <ol class="breadcrumb" style="background-color:#fff;text-align:center;">
-            <li class="breadcrumb-item" style="font-family:raleway;">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
                 <a href="{% url 'index' %}">Home</a>
             </li>
-            <li class="breadcrumb-item active" style="font-family:raleway;">Contact</li>
+            <li class="breadcrumb-item active">Contact</li>
         </ol>
+        <div class="contact-header">
+            <div class="col-xs-12">
+                <h2 class="contact-details-header">Contact Us</h2>
+                </div>
+        </div>
+
         <div class="row">
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4">
-                 <form role="form" action="{% url 'contact'%}" method="post" novalidate>
+
+               <div class="col-sm-4">
+                   <div class="contact-form">
+                  <form role="form" action="{% url 'contact'%}" method="post" novalidate>
                     <legend>Have a question? &nbsp;<strong>Send us a message!</strong></legend>
                     {% csrf_token %}
                     {{ form | as_bootstrap }}
@@ -23,9 +30,69 @@
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
                     <p>{{ field }}</p>
-                </form>
+                  </form>
+               </div>
             </div>
-            <div class="col-sm-4"></div>
+            <div class="col-sm-8">
+                <div class="contact-details">
+
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9679.016424047197!2d-8.626316360746156!3d52.66441887746707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485b5c691649d871%3A0x1800c7a937e11b80!2sJohnsgate%2C+Limerick!5e0!3m2!1sen!2sie!4v1512608604059" width="750" height="300" frameborder="0" style="border:0; margin:20px 0;" allowfullscreen></iframe>
+<div class="info-section">
+                    <div class="row">
+
+                    <div class="col-sm-4">
+                        <span class="contact-details-column"><strong>Find us on Social</strong></span>
+                        <hr style="border-color:#ddd;">
+                        <p class="info-item">
+                    <i class="fa fa-twitter" aria-hidden="true"></i> <a href="https://twitter.com/primovisto" target=_blank>Twitter
+                    </a>
+                </p>
+                <p class="info-item">
+                    <i class="fa fa-facebook" aria-hidden="true"></i> <a href="https://www.facebook.com/primovisto/" target=_blank>Facebook
+                    </a>
+                </p>
+                <p class="info-item">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i> <a href="https://www.linkedin.com/" target=_blank>Linkedin
+                    </a>
+                </p>
+                <p class="info-item">
+                    <i class="fa fa-github" aria-hidden="true"></i> <a href="https://github.com/primovisto" target=_blank>Github
+                    </a>
+                </p>
+                        <p class="info-item">
+                    <i class="fa fa-pinterest" aria-hidden="true"></i> <a href="https://pinterest.com/primovisto" target=_blank>Pinterest
+                    </a>
+                </p>
+
+                    </div>
+                    <div class="col-sm-4">
+                        <span class="contact-details-column"><strong>Our Address</strong></span>
+                        <hr style="border-color:#ddd;">
+                        <p class="info-item"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                    22 Johns St., Johnsgate, <br>Limerick City, Co.Limerick
+                </p>
+
+
+                    </div>
+                    <div class="col-sm-4">
+                        <span class="contact-details-column"><strong>Contact info</strong></span>
+                        <hr style="border-color:#ddd;">
+                        <p class="info-item">
+                    <i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:862434343">(086)2434343
+                    </a>
+                </p>
+                        <p class="info-item">
+                    <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:ed@velabri.co">hello@modapo.com
+                    </a>
+                </p>
+
+</div>
+</div>
+                       </div>
+                    </div>
+                </div>
+
         </div>
     </div>
     </div>

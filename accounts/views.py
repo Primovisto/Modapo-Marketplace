@@ -1,6 +1,7 @@
 from django.contrib import messages, auth
 from django.contrib.auth.decorators import login_required
-from accounts.forms import UserRegistrationForm, UserLoginForm
+from django.contrib.auth.forms import PasswordChangeForm
+from accounts.forms import UserRegistrationForm, UserLoginForm, EditProfileForm
 from django.core.urlresolvers import reverse
 from django.shortcuts import render, redirect
 from django.template.context_processors import csrf
@@ -53,6 +54,21 @@ def profile(request):
     return render(request, "profile.html", {'products': products})
 
 
+@login_required(login_url='/login?next=profile/edit')
+def edit_profile(request):
+    if request.method == 'POST':
+        form = EditProfileForm(request.POST, instance=request.user)
+
+        if form.is_valid():
+            form.save()
+            return redirect('/accounts/profile')
+
+    else:
+        form = EditProfileForm(instance=request.user)
+        args = {'form': form}
+        return render(request, 'edit_profile.html', args)
+
+
 def login(request):
     if request.method == 'POST':
         form = UserLoginForm(request.POST)
@@ -79,3 +95,18 @@ def logout(request):
     auth.logout(request)
     messages.success(request, 'You have successfully logged out')
     return redirect(reverse('index'))
+
+
+def change_password(request):
+    if request.method == 'POST':
+        form = PasswordChangeForm(data=request.POST, user=request.user)
+
+        if form.is_valid():
+            form.save()
+            return render(request, 'password_change_message.html')
+
+    else:
+        form = PasswordChangeForm(user=request.user)
+
+        args = {'form': form}
+        return render(request, 'change_password.html', args)

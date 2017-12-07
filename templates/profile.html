@@ -1,37 +1,88 @@
 {% extends "base.html" %}
+{% load static from staticfiles %}
+{% load gravatar %}
 {% block content %}
-<div class="maincontent" style="border-top:4px solid #6aefcc;margin-top:20px;padding:20px;">
+<div class="maincontent">
     <div class="container">
 
     <!-- Breadcrumbs -->
 
-        <ol class="breadcrumb" style="background-color:#fff;text-align:center;">
-            <li class="breadcrumb-item" style="font-family:raleway;">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
                 <a href="{% url 'index' %}">Home</a>
             </li>
-            <li class="breadcrumb-item active" style="font-family:raleway;">My Profile</li>
+            <li class="breadcrumb-item">My Profile</li>
         </ol>
+
     <div class="row">
-            <div class="col-lg-3 col-md-4 col-sm-12">
+        <div class="col-xs-12">
+            <h2 class="seller-dashboard-header">Seller Dashboard</h2>
+        </div>
+    </div>
+    <div class="row">
+    <div class="col-xs-12">
+        <hr>
+        <p class="welcome-message">Welcome, {{ user.username }}!</p>
+        <hr>
+    </div>
+    </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <div class="seller-info">
+                    <h2 class="seller-details-header">My Details:</h2>
+                <a class="story-img" href="#">
+                    <img src="{% gravatar_url user.email %}"
+                         style="width:100px; height: 100px; background-color: #12ABB2; color: #ffffff; text-align: center;"
+                         class="img-circle text-center">
+                </a>
+                    <p class="seller-info"><strong>Username: </strong>{{ user.username }}</p>
+                    <p class="seller-info"><strong>Email address: </strong>{{ user.email }}</p>
+                    </div>
+
+                <div class="seller-actions">
+                    <div class="add-new-product">
+                        <button class="add-new-btn" onclick="location.href='{% url 'new' %}'">Add New Products</button>
+                        <button class="add-new-btn" onclick="location.href='{% url 'change_password' %}'">Change Password</button>
+                        <button class="add-new-btn" onclick="location.href='{% url 'edit_profile' %}'">Edit Profile</button>
+                    </div>
+
+                </div>
 
             </div>
-            <div class="col-lg-9 col-md-8 col-sm-12">
-                <p><strong>Username: </strong>{{ user.email }}</p>
-                <p><strong>Email address: </strong>{{ user.email }}</p>
+            <div class="col-lg-9 col-md-9 col-sm-12">
 
-                <p><strong>My Products:</strong></p>
+
+                <h2 class="seller-details-header">My Products:</h2>
+
                 {% for product in products %}
+
                     {% if user.id == product.seller_id %}
-                        <p><strong>Product title: </strong>{{ product.product}}</p>
-                        <p><strong>Product Price: </strong>&euro;{{ product.price}}</p>
-                        <button class="btn btn-success" onclick="location.href='{% url 'edit' product.id %}'">Edit
+                        <div class="col-md-3">
+<a style="cursor:pointer; text-decoration:none;" onclick="location.href='{% url 'productpage' product.id %}'">
+                        {% if product.image %}
+
+                <img src="/media/{{ product.image }}" style="width:200px; height: 200px;" /> {% else %}
+            <div class="">No images available</div>
+
+                {% endif %}
+</a>
+                        <p class="seller-product-item"><strong>Product title: </strong>{{ product.product}}</p>
+                        <p class="seller-product-price"><strong>Product Price: </strong>&euro;{{ product.price}}</p>
+                        <button class="edit-btn" onclick="location.href='{% url 'edit' product.id %}'">Edit
                             Product
                         </button>
+
                         <hr>
+                        </div>
                     {% endif %}
+
+
                 {% endfor %}
+
             </div>
-        </div>
+    </div>
+</div>
     </div>
 </div>
 {% endblock %}

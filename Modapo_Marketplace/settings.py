@@ -184,5 +184,7 @@ STATICFILES_DIRS = (
    os.path.join(BASE_DIR, "static"),
 )
 
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
 # tinymce settings
 TINYMCE_JS_ROOT = os.path.join(BASE_DIR, "static", 'js', 'tinymce', '/tinymce.min.js')

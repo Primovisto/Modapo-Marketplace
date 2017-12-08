@@ -36,7 +36,6 @@ urlpatterns = [
     url(r'^checkout/', include(checkout_urls)),
     url(r'^contact/', include(contact_urls)),
     url(r'^shopping-cart/', include(shopping_urls)),
-    url(r"^payments/", include("pinax.stripe.urls")),
     url(r'^products/search/$', search_items, name='search'),
 
 ]

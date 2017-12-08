@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0af035c4-4ef3-469a-9450-6c43555c612c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/django_gravatar/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/django_gravatar/compat.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/django_gravatar/helpers.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/django_gravatar/models.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/django_gravatar/templatetags/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/django_gravatar/templatetags/gravatar.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/django_gravatar/tests.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/django_gravatar/views.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/django_gravatar2-1.4.2.dist-info/DESCRIPTION.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/django_gravatar2-1.4.2.dist-info/INSTALLER" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/django_gravatar2-1.4.2.dist-info/METADATA" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/django_gravatar2-1.4.2.dist-info/RECORD" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/django_gravatar2-1.4.2.dist-info/WHEEL" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/django_gravatar2-1.4.2.dist-info/metadata.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modapo/Lib/site-packages/django_gravatar2-1.4.2.dist-info/top_level.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Modapo_Marketplace/settings.py" afterPath="$PROJECT_DIR$/Modapo_Marketplace/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings/base.py" afterPath="$PROJECT_DIR$/settings/base.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Modapo_Marketplace/urls.py" afterPath="$PROJECT_DIR$/Modapo_Marketplace/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/profile.html" afterPath="$PROJECT_DIR$/templates/profile.html" />
     </list>
     <ignored path="Modapo_Marketplace.iws" />
@@ -49,6 +32,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Modapo_Marketplace/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="438">
+              <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+              <folding>
+                <element signature="e#652#684#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Modapo_Marketplace/settings.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -89,14 +84,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="profile.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/profile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+            <state relative-caret-position="119">
+              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding>
-                <element signature="e#2232#2277#0#HTML" expanded="true" />
-                <marker date="1512764320586" expanded="false" signature="1021:1111" ph="..." />
+                <element signature="e#2032#2077#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -138,18 +132,6 @@
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/products/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#1#33#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -204,7 +186,6 @@
         <option value="$PROJECT_DIR$/accounts/templates/edit_profile.html" />
         <option value="$PROJECT_DIR$/accounts/templates/change_password.html" />
         <option value="$PROJECT_DIR$/shopping/urls.py" />
-        <option value="$PROJECT_DIR$/Modapo_Marketplace/urls.py" />
         <option value="$PROJECT_DIR$/accounts/urls.py" />
         <option value="$PROJECT_DIR$/contact/urls.py" />
         <option value="$PROJECT_DIR$/blog/urls.py" />
@@ -223,6 +204,7 @@
         <option value="$PROJECT_DIR$/Modapo_Marketplace/settings.py" />
         <option value="$PROJECT_DIR$/settings/base.py" />
         <option value="$PROJECT_DIR$/templates/profile.html" />
+        <option value="$PROJECT_DIR$/Modapo_Marketplace/urls.py" />
       </list>
     </option>
   </component>
@@ -1253,16 +1235,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Modapo_Marketplace/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
-          <folding>
-            <element signature="e#652#684#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/runtime.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1347,11 +1319,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/profile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+        <state relative-caret-position="119">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
-            <element signature="e#2232#2277#0#HTML" expanded="true" />
-            <marker date="1512764320586" expanded="false" signature="1021:1111" ph="..." />
+            <element signature="e#2032#2077#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modapo_Marketplace/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+          <folding>
+            <element signature="e#652#684#0" expanded="true" />
           </folding>
         </state>
       </provider>

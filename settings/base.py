@@ -25,7 +25,7 @@ SECRET_KEY = '!li99$$3!3f@zutuex5fn6lwtokurb5x^&@s^y)s6=sw$)ubws'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['modapomarketplace.herokuapp.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['modapo-marketplace.herokuapp.com', '127.0.0.1', 'localhost']
 
 SITE_ID = 1
 

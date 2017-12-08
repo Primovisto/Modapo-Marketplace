@@ -17,6 +17,6 @@ STRIPE_SECRET = os.getenv('STRIPE_SECRET', 'sk_test_L2u1PAnN0QLTVcbLRes1qB2W')
 
 
 # PayPal Settings
-SITE_URL = 'modapomarketplace.herokuapp.com'
+SITE_URL = 'https://modapo-marketplace.herokuapp.com'
 PAYPAL_NOTIFY_URL = 'http://e1836b31.ngrok.io/a-very-hard-to-guess-url/'
 PAYPAL_RECEIVER_EMAIL = 'edward@primovisto.com'

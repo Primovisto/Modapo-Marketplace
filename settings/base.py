@@ -174,11 +174,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = (
    os.path.join(BASE_DIR, "static"),
 )
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
-# for /static/root/favicon.ico
-WHITENOISE_ROOT = os.path.join(BASE_DIR, 'staticfiles', 'root')
-
-
 
 # tinymce settings
 TINYMCE_JS_ROOT = os.path.join(BASE_DIR, "static", 'js', 'tinymce', '/tinymce.min.js')

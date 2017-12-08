@@ -1267,7 +1267,7 @@ XRegExp = XRegExp || (function (undef) {
 }());
 
 
-/***** unicode-base.txt.js *****/
+/***** unicode-base.js *****/
 
 /*!
  * XRegExp Unicode Base v1.0.0

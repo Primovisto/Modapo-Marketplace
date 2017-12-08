@@ -2494,7 +2494,7 @@ tinymce.html.Styles = function(settings, schema) {
 						'figure|footer|form|h1|h2|h3|h4|h5|h6|header|hgroup|hr|i|iframe|img|input|ins|kbd|keygen|label|link|map|mark|menu|meta|meter|nav|noscript|ol|object|output|' +
 						'p|pre|progress|q|ruby|samp|script|section|select|small|span|strong|style|sub|sup|svg|table|textarea|time|ul|var|video'
 				}, 'html[A|manifest][body|head]' +
-					'head[A][base.txt|command|link|meta|noscript|script|style|title]' +
+					'head[A][base|command|link|meta|noscript|script|style|title]' +
 					'title[A][#]' +
 					'base[A|href|target][]' +
 					'link[A|href|rel|media|type|sizes][]' +

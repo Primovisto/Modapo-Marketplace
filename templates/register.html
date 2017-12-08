@@ -23,19 +23,25 @@
             </li>
             <li class="breadcrumb-item active">Register</li>
         </ol>
-
+<div class="col-xs-2"></div>
+        <div class="col-xs-8">
   <form role="form" method="post" id="register-form" action="{% url 'register' %}">
     <div id="credit-card-errors" style="display:none">
       <div class="alert-message block-message error" id="stripe-error-message"></div>
     </div>
 
-    <legend>Create a new account</legend>
+    <legend>Register with Modapo</legend>
     {% csrf_token %}
     {{ form|as_bootstrap }}
     <div class="form-group">
       <input class="btn btn-primary" id="validate_card_btn" name="commit" type="submit" value="Validate Credit Card">
     </div>
   </form>
+            </div>
+        <div class="col-xs-2"></div>
      </div>
     </div>
+    {% block search %}
+        {% csrf_token %}
+        {% endblock %}
 {% endblock %}

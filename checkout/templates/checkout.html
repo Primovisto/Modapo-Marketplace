@@ -28,7 +28,7 @@
                         <div class="col-md-4 col-sm-6">
                             {% if product.image %}
                                 <img class="imageplaceholder" src="/media/{{ product.image }}"
-                                     style="width:300px; height: 266px; background-color: #12ABB2; color: #ffffff;">
+                                     style="width:300px; height: 266px; background-color: #fff; color: #ffffff;">
                             {% else %}
                                 <div class="imageplaceholder">No images available</div>
                             {% endif %}
@@ -57,4 +57,7 @@
             </div>
         </div>
     </div>
+    {% block search %}
+        {% csrf_token %}
+        {% endblock %}
 {% endblock %}

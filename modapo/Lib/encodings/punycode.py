@@ -96,7 +96,7 @@ def adapt(delta, first, numchars):
     else:
         delta //= 2
     delta += delta // numchars
-    # ((base - tmin) * tmax) // 2 == 455
+    # ((base.txt - tmin) * tmax) // 2 == 455
     divisions = 0
     while delta > 455:
         delta = delta // 35 # base - tmin

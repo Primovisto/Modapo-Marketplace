@@ -45,6 +45,7 @@
                         <button class="add-new-btn" onclick="location.href='{% url 'new' %}'">Add New Products</button>
                         <button class="add-new-btn" onclick="location.href='{% url 'change_password' %}'">Change Password</button>
                         <button class="add-new-btn" onclick="location.href='{% url 'edit_profile' %}'">Edit Profile</button>
+
                     </div>
 
                 </div>
@@ -85,4 +86,7 @@
 </div>
     </div>
 </div>
+    {% block search %}
+        {% csrf_token %}
+        {% endblock %}
 {% endblock %}

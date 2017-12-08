@@ -31,16 +31,6 @@ SITE_ID = 1
 
 INTERNAL_IPS = ('127.0.0.1',)
 
-# Stripe environment variables
-STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE', 'pk_test_BXMhGZbzUnHrO4wR2QDrLSN1')
-STRIPE_SECRET = os.getenv('STRIPE_SECRET', 'sk_test_L2u1PAnN0QLTVcbLRes1qB2W')
-
-
-# PayPal Settings
-SITE_URL = 'modapomarketplace.herokuapp.com'
-PAYPAL_NOTIFY_URL = 'http://e1836b31.ngrok.io/a-very-hard-to-guess-url/'
-PAYPAL_RECEIVER_EMAIL = 'edward@primovisto.com'
-
 
 CART_PRODUCT_MODEL = 'products.models.Product'
 
@@ -57,13 +47,13 @@ INSTALLED_APPS = [
     'django_forms_bootstrap',
     'accounts',
     'disqus',
+    'pinax.stripe',
     'carton',
     'django_gravatar',
     'shopping',
     'products',
     'checkout',
     'contact',
-    'debug_toolbar',
     'tinymce',
     'emoticons',
     'home',

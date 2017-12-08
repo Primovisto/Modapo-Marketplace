@@ -201,6 +201,16 @@ margin-right:6px;
     background-color: #eee;
     border: 1px solid #999;
     padding: 10px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+#search{
+        border: 1px solid #888;
+    border-radius: 3px;
+    padding: 5px;
+    width: 100%;
+    background: #fcfcfc;
 }
 
 
@@ -230,9 +240,6 @@ margin-right:6px;
 }
 
 
-td{
-    padding:20px;
-}
 
 .maincontent{
     border-top:4px solid #6c8835;

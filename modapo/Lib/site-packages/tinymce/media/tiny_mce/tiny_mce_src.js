@@ -47,10 +47,10 @@
 				return;
 			}
 
-			// Get suffix and base
+			// Get suffix and base.txt
 			t.suffix = '';
 
-			// If base element found, add that infront of baseURL
+			// If base.txt element found, add that infront of baseURL
 			nl = d.getElementsByTagName('base');
 			for (i=0; i<nl.length; i++) {
 				v = nl[i].href;
@@ -73,7 +73,7 @@
 
 					t.baseURL = n.src.substring(0, n.src.lastIndexOf('/'));
 
-					// If path to script is relative and a base href was found add that one infront
+					// If path to script is relative and a base.txt href was found add that one infront
 					// the src property will always be an absolute one on non IE browsers and IE 8
 					// so this logic will basically only be executed on older IE versions
 					if (base && t.baseURL.indexOf('://') == -1 && t.baseURL.indexOf('/') !== 0)
@@ -2085,7 +2085,7 @@ tinymce.util.Quirks = function(editor) {
 			for (i = 0; i < items.length; i += 2) {
 				chr = String.fromCharCode(parseInt(items[i], radix));
 
-				// Only add non base entities
+				// Only add non base.txt entities
 				if (!baseEntities[chr]) {
 					entity = '&' + items[i + 1] + ';';
 					lookup[chr] = entity;
@@ -2494,9 +2494,9 @@ tinymce.html.Styles = function(settings, schema) {
 						'figure|footer|form|h1|h2|h3|h4|h5|h6|header|hgroup|hr|i|iframe|img|input|ins|kbd|keygen|label|link|map|mark|menu|meta|meter|nav|noscript|ol|object|output|' +
 						'p|pre|progress|q|ruby|samp|script|section|select|small|span|strong|style|sub|sup|svg|table|textarea|time|ul|var|video'
 				}, 'html[A|manifest][body|head]' +
-					'head[A][base|command|link|meta|noscript|script|style|title]' +
+					'head[A][base.txt|command|link|meta|noscript|script|style|title]' +
 					'title[A][#]' +
-					'base[A|href|target][]' +
+					'base.txt[A|href|target][]' +
 					'link[A|href|rel|media|type|sizes][]' +
 					'meta[A|http-equiv|name|content|charset][]' +
 					'style[A|type|media|scoped][#]' +
@@ -2726,7 +2726,7 @@ tinymce.html.Styles = function(settings, schema) {
 				'tfoot[ZF][tr]' + 
 				'tbody[ZF][tr]' + 
 				'area[E|D|shape|coords|href|nohref|alt|target][]' + 
-				'base[id|href|target][]' + 
+				'base.txt[id|href|target][]' +
 				'body[E|onload|onunload|background|bgcolor|text|link|vlink|alink][#|Y]'
 			);
 		}
@@ -2780,7 +2780,7 @@ tinymce.html.Styles = function(settings, schema) {
 		// Setup map objects
 		whiteSpaceElementsMap = createLookupTable('whitespace_elements', 'pre script noscript style textarea');
 		selfClosingElementsMap = createLookupTable('self_closing_elements', 'colgroup dd dt li option p td tfoot th thead tr');
-		shortEndedElementsMap = createLookupTable('short_ended_elements', 'area base basefont br col frame hr img input isindex link meta param embed source wbr');
+		shortEndedElementsMap = createLookupTable('short_ended_elements', 'area base.txt basefont br col frame hr img input isindex link meta param embed source wbr');
 		boolAttrMap = createLookupTable('boolean_attributes', 'checked compact declare defer disabled ismap multiple nohref noresize noshade nowrap readonly selected autoplay loop controls');
 		nonEmptyElementsMap = createLookupTable('non_empty_elements', 'td th iframe video audio object script', shortEndedElementsMap);
 		textBlockElementsMap = createLookupTable('text_block_elements', 'h1 h2 h3 h4 h5 h6 p div address pre form ' + 
@@ -13802,7 +13802,7 @@ tinymce.create('tinymce.ui.Toolbar:tinymce.ui.Container', {
 			// We only need to override paths if we have to
 			// IE has a bug where it remove site absolute urls to relative ones if this is specified
 			if (s.document_base_url != tinymce.documentBaseURL)
-				t.iframeHTML += '<base href="' + t.documentBaseURI.getURI() + '" />';
+				t.iframeHTML += '<base.txt href="' + t.documentBaseURI.getURI() + '" />';
 
 			// IE8 doesn't support carets behind images setting ie7_compat would force IE8+ to run in IE7 compat mode.
 			if (tinymce.isIE8) {

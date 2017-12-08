@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404, redirect
+from django.shortcuts import render, get_object_or_404, redirect, reverse, HttpResponseRedirect
 from .models import Product
 from .forms import NewProductForm
 from django.contrib.auth.decorators import login_required
@@ -44,6 +44,13 @@ def edit_product(request, id):
     else:
         form = NewProductForm(instance=product)
     return render(request, 'products/productform.html', {'form': form})
+
+
+@login_required(login_url="/accounts/login?next=products/delete/")
+def delete_product(request, id):
+    product = Product.objects.filter(pk=id)
+    product.delete()
+    return HttpResponseRedirect(reverse('products'))
 
 
 

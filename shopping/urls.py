@@ -1,5 +1,6 @@
 from django.conf.urls import url
 from shopping.views import add, remove, show, checkout, user_cart
+from home.views import search_items
 
 urlpatterns = [
     url(r'^add/$', add, name='shopping-cart-add'),
@@ -7,4 +8,5 @@ urlpatterns = [
     url(r'^show/$', show, name='shopping-cart-show'),
     url(r'^checkout/$', checkout, name='checkout'),
     url(r'^$', user_cart, name='cart'),
+    url(r'^products/search/$', search_items, name='search'),
 ]

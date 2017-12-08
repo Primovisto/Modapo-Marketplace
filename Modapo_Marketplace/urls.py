@@ -13,7 +13,6 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import include, url
 from django.contrib import admin
 from django.views.static import serve
 from .settings import MEDIA_ROOT
@@ -35,9 +34,10 @@ urlpatterns = [
     url(r'^media/(?P<path>.*)$', serve, {'document_root': MEDIA_ROOT}),
     url(r'^$', index, name='index'),
     url(r'^checkout/', include(checkout_urls)),
-    url(r'^products/search/$', search_items, name='search'),
     url(r'^contact/', include(contact_urls)),
     url(r'^shopping-cart/', include(shopping_urls)),
+    url(r"^payments/", include("pinax.stripe.urls")),
+    url(r'^products/search/$', search_items, name='search'),
 
 ]
 

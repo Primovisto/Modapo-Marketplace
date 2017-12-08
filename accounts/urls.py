@@ -1,5 +1,6 @@
 from django.conf.urls import url
 from .views import logout, profile, login, register, edit_profile, change_password
+from home.views import search_items
 
 
 urlpatterns = [
@@ -9,4 +10,5 @@ urlpatterns = [
     url(r'^change_password/$', change_password, name='change_password'),
     url(r'^login', login, name='login'),
     url(r'^logout/$', logout, name='logout'),
+    url(r'^products/search/$', search_items, name='search'),
 ]

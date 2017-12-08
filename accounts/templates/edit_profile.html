@@ -11,6 +11,7 @@
     {{ form|as_bootstrap }}
     <button type="submit">Save</button>
 </form>
-
-
+{% block search %}
+        {% csrf_token %}
+        {% endblock %}
 {% endblock %}

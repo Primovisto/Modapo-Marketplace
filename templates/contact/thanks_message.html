@@ -17,4 +17,7 @@
 
     </div>
 </div>
+    {% block search %}
+        {% csrf_token %}
+        {% endblock %}
 {% endblock %}

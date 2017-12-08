@@ -48,7 +48,6 @@ INSTALLED_APPS = [
     'accounts',
     'disqus',
     'carton',
-    'django_gravatar',
     'shopping',
     'products',
     'checkout',

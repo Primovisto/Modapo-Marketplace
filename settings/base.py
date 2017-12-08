@@ -47,7 +47,6 @@ INSTALLED_APPS = [
     'django_forms_bootstrap',
     'accounts',
     'disqus',
-    'pinax.stripe',
     'carton',
     'django_gravatar',
     'shopping',

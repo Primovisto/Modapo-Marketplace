@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "Modapo_Marketplace.settings.staging")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "Modapo_Marketplace.settings")
 
 application = get_wsgi_application()

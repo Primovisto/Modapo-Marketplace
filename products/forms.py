@@ -8,6 +8,9 @@ class NewProductForm(forms.ModelForm):
         fields = (
                   'product',
                   'category',
-                  'description',
+                  'product_short_description',
+                  'product_long_description',
                   'price',
+                  'brand',
+                  'brand_description',
                   'image')

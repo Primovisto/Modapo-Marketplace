@@ -125,7 +125,8 @@ nav .menu-list{
     flex-wrap: wrap;
     list-style: none;
     margin-top:35px;
-    margin-left:55px;
+    margin-left:90px;
+    padding:0;
     z-index:99999;
     color:#232323;
 }

@@ -9,4 +9,8 @@ urlpatterns = [
     url(r'^checkout/$', checkout, name='checkout'),
     url(r'^$', user_cart, name='cart'),
     url(r'^products/search/$', search_items, name='search'),
+    url(r'^show/products/search/$', search_items, name='search'),
+    url(r'^add/products/search/$', search_items, name='search'),
+    url(r'^remove/products/search/$', search_items, name='search'),
+    url(r'^checkout/products/search/$', search_items, name='search'),
 ]

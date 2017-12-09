@@ -9,8 +9,11 @@ urlpatterns = [
     url(r'^(?P<id>\d+)/$', product_page, name='productpage'),
     url(r'^new/$', add_new_product, name='new'),
     url(r'^(?P<id>\d+)/edit/$', edit_product, name='edit'),
-    url(r'^delete/(?P<pk>\d+)/$', delete_product, name='delete_product'),
+    url(r'^delete/(?P<id>\d+)/$', delete_product, name='delete_product'),
     url(r'^products/search/$', search_items, name='search'),
-    url(r'^(?P<id>\d+)/products/', search_items, name='search'),
+    url(r'^new/products/search/$', search_items, name='search'),
+    url(r'^delete/(?P<id>\d+)/products/search$', search_items, name='search'),
+
+
 
 ]

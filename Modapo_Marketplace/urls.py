@@ -38,6 +38,7 @@ urlpatterns = [
     url(r'^shopping-cart/', include(shopping_urls)),
     url(r'^products/search/$', search_items, name='search'),
 
+
 ]
 
 

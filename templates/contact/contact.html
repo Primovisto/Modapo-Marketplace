@@ -22,7 +22,7 @@
 
                <div class="col-sm-4">
                    <div class="contact-form">
-                  <form role="form" action="{% url 'contact'%}" method="post" novalidate>
+                  <form role="form" action="{% url 'contact' %}" method="post" novalidate>
                     <legend>Have a question? &nbsp;<strong>Send us a message!</strong></legend>
                     {% csrf_token %}
                     {{ form | as_bootstrap }}

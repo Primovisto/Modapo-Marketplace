@@ -1,7 +1,7 @@
 {% if products.count > 0 %}
 
 {% for product in products %}
-<li><a href="products/{{ product.id }}/" style="color:#232323;">{{ product.product }}</a></li>
+<li><a href="/products/{{ product.id }}/" style="color:#232323;">{{ product.product }}</a></li>
 {% endfor %}
 
 {% else %}

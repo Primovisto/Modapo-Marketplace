@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'django_forms_bootstrap',
+    'paypal.standard.ipn.models.PayPalIPN',
     'accounts',
     'disqus',
     'paypal_store',

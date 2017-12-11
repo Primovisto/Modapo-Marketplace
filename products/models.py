@@ -29,7 +29,6 @@ class Product(models.Model):
         self.published_date = timezone.now()
         self.save()
 
-
     @property
     def paypal_form(self):
         paypal_dict = {

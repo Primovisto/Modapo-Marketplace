@@ -47,7 +47,6 @@ INSTALLED_APPS = [
     'django_forms_bootstrap',
     'paypal.standard.ipn',
     'paypal_store',
-    'django_gravatar',
     'accounts',
     'disqus',
     'carton',

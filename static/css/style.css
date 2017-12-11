@@ -520,19 +520,29 @@ background-color: rgba(255,255,255,1);
 }
 
 
-.purchase-btn{
-    background-color:#515151;
-    border-radius:2px;
-    color:#fff;
-    font-size:16px;
-    padding:12px 24px;
-    font-family:raleway;
-    height: 60px;
-    border:none;
-    margin-left:10px;
-    max-width:60%;
-    text-transform:uppercase;
+.payment-methods{
+    display:inline-block;
+    position:relative;
+    top:-20px;
 }
+
+.paypal-payments{
+    display: inline-block;
+    position: relative;
+    top: -20px;
+
+}
+
+
+.credit-card-payments{
+    display: inline-block;
+    font-size: 18px;
+    position: relative;
+    top: 20px;
+    margin-left: 30px;
+
+}
+
 
 .product-info{
     background-color:#fcfcfc;
@@ -731,5 +741,22 @@ and (min-device-width: 768px)
 @media only screen and (device-width: 1024px){
     .product-details{
         margin-left:50px;
+    }
+}
+
+/* Media Queries - Product Page Payments section*/
+@media only screen
+  and (max-device-width: 475px){
+    .credit-card-payments{
+        display:block;
+        top:0;
+        margin-left:0;
+        margin-top:20px;
+    }
+
+    .paypal-payments{
+        top:0;
+        display:block;
+        margin-top:20px;
     }
 }

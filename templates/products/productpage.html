@@ -28,15 +28,28 @@
         <p><strong>Category:</strong>{{ product.category }}</p>
                 <p class="product-details-views">Views: {{ product.views }}</p>
                 <hr>
+                    <div class="payment-methods">
+                        <h4 style="font-size: 24px;">Pay Now:</h4>
+                   <div class="paypal-payments">
+                        <p style="font-size: 18px;"><strong>Paypal</strong></p>
 
-                    <button class="add-cart-btn" onclick="location.href='{% url "shopping-cart-add" %}?id={{product.id}}'">Add to cart</button>
-                    <table style="display:inline; position:relative; top:20px;">
+                    <table>
                     <tbody>
-        <tr>
-                    <td>{{ product.paypal_form.sandbox }}</td>
+                    <tr>
+                        <td>{{ product.paypal_form.sandbox }}</td>
                     </tr>
                     </tbody>
         </table>
+
+</div>
+<div class="credit-card-payments">
+
+        <a href="{% url "pay_now_stripe" product.id %}" class="" style="text-decoration:none;"><p><strong>Credit Card</strong></p><img src="http://oesolutions.net/wp-content/uploads/2015/08/credit-card-logos.jpg" height="40" width="200"/></a>
+    </div>
+    </div>
+<div class="add-to-cart">
+         <button class="add-cart-btn" onclick="location.href='{% url "shopping-cart-add" %}?id={{product.id}}'">Add to cart</button>
+    </div>
 
       </div>
     </div>

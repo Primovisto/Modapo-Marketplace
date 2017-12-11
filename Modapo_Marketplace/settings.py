@@ -53,7 +53,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'paypal.standard.ipn',
     'django.contrib.sites',
     'django_forms_bootstrap',
     'accounts',

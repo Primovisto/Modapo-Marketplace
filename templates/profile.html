@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load staticfiles %}
+{% load gravatar %}
 {% block content %}
 <div class="maincontent">
     <div class="container">
@@ -30,8 +31,10 @@
             <div class="col-lg-3 col-md-3 col-sm-12">
                 <div class="seller-info">
                     <h2 class="seller-details-header">My Details:</h2>
-                <a class="story-img" href="#">
-
+                <a class="profile-img" href="#">
+                 <img src="{% gravatar_url user.email %}"
+                         style="width:150px; height: 150px; background-color: #fff; color: #ffffff;"
+                         class="img-circle">
 
                 </a>
                     <p class="seller-info"><strong>Username: </strong>{{ user.username }}</p>

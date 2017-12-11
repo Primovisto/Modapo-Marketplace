@@ -7,6 +7,7 @@ from django.template.context_processors import csrf
 from django.conf import settings
 from django.contrib.auth.decorators import login_required
 import stripe
+from shopping.models import CartItem
 from carton.cart import Cart
 from products.models import Product
 
@@ -66,9 +67,9 @@ def checkout(request):
 
 @login_required(login_url="/accounts/login")
 def user_cart(request):
-    CartItems = Cart.objects.filter(user=request.id)
+    cartItems = CartItem.objects.filter(user=request.id)
     total = 0
-    for item in CartItems:
+    for item in cartItems:
         total += item.product.price
 
     if request.method == 'POST':
@@ -96,13 +97,13 @@ def user_cart(request):
         else:
             messages.error(request, "We were unable to take a payment with that card!")
     else:
-        if len(CartItems) == 0:
+        if len(cartItems) == 0:
             return render(request, 'shopping/empty-cart.html')
 
         form = CheckoutForm()
 
     args = {'form': form,
-            'items': CartItems,
+            'items': cartItems,
             'total': total,
             'publishable': settings.STRIPE_PUBLISHABLE}
     args.update(csrf(request))

@@ -1,6 +1,6 @@
 
 from django.conf.urls import url
-from .views import all_products, product_page, add_new_product, edit_product, delete_product
+from .views import all_products, product_page, add_new_product, edit_product, delete_product, category_list
 from home.views import search_items
 
 urlpatterns = [
@@ -13,6 +13,7 @@ urlpatterns = [
     url(r'^products/search/$', search_items, name='search'),
     url(r'^new/products/search/$', search_items, name='search'),
     url(r'^delete/(?P<id>\d+)/products/search$', search_items, name='search'),
+    url(r'^category/$', category_list, name='category_list'),
 
 
 

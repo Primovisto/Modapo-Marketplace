@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static from staticfiles %}
+
+{% block content %}
+    <div class="container">
+
+        <!-- Page Heading/Breadcrumbs -->
+        <h1>Cart</h1>
+
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="{% url 'index' %}">Home</a>
+            </li>
+            <li class="breadcrumb-item active">Cart</li>
+        </ol>
+
+        <!-- Content Row -->
+        <p>You have no items in your cart.</p>
+        <p class="browseads"><a href="{% url 'products' %}"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Go shopping</a></p>
+        <!-- End of Content -->
+
+    </div>
+{% endblock %}

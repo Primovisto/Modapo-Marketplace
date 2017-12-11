@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load static from staticfiles %}
+{% load bootstrap_tags %}
+{% block content %}
+    <div class="slider-area">
+    <div class="slider-active owl-carousel">
+        <div class="item">
+            <img src="http://i68.tinypic.com/2ibj63b.png" />
+        </div>
+        <div class="item">
+            <img src="http://www.theskinnybeep.com/wp-content/uploads/2010/10/Brunch-Wrangler-Lomo-October-Milan-2010-31.jpg" />
+        </div>
+    </div>
+</div>
+<div class="container">
+
+        <!-- Breadcrumbs -->
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="{% url 'index' %}">Home</a>
+            </li>
+            <li class="breadcrumb-item">Browse Products</li>
+        </ol>
+
+<div class="container">
+        <div class="row">
+            <div class="col-xs-12 catalogue-header">
+                <h1>Products Categories</h1>
+                {% for category in category_list %}
+                <p>{{ product.category.name }}</p>
+                 {% endfor %}
+
+            </div>
+        </div>
+    </div>
+
+        <!-- Content Row -->
+
+
+
+
+        <!-- End of Content -->
+</div>
+
+
+    {% block search %}
+        {% csrf_token %}
+        {% endblock %}
+{% endblock %}

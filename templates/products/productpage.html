@@ -23,14 +23,21 @@
 </div>
     <div class="col-md-6">
                 <h2 class="product-header">{{ product.product }}</h2>
-                <p class="product-details-desc">{{ product.product_short_description }}</p>
+                <p class="product-details-desc"><strong>Description:</strong> {{ product.product_short_description }}</p>
                 <p class="product-details-price">€ {{ product.price }}</p>
+        <p><strong>Category:</strong>{{ product.category }}</p>
                 <p class="product-details-views">Views: {{ product.views }}</p>
                 <hr>
-                <p>
+
                     <button class="add-cart-btn" onclick="location.href='{% url "shopping-cart-add" %}?id={{product.id}}'">Add to cart</button>
-                    <button class="purchase-btn" onclick="location.href='{% url 'pay_now_stripe' product.id %}'">Buy it now</button>
-                </p>
+                    <table style="display:inline; position:relative; top:20px;">
+                    <tbody>
+        <tr>
+                    <td>{{ product.paypal_form.sandbox }}</td>
+                    </tr>
+                    </tbody>
+        </table>
+
       </div>
     </div>
 </div>

@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse, HttpResponseRedirect
-from .models import Product
+from .models import Product, Category
 from .forms import NewProductForm
 from django.contrib.auth.decorators import login_required
 
@@ -51,6 +51,12 @@ def delete_product(request, id):
     product = Product.objects.filter(pk=id)
     product.delete()
     return HttpResponseRedirect(reverse('products'))
+
+
+def category_list(request):
+    categories = Category.objects.all()
+
+    return render(request, 'products/category_list.html', {'categories': categories})
 
 
 

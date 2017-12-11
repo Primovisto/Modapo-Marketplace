@@ -1,5 +1,4 @@
 from django.contrib import messages
-from django.core.urlresolvers import reverse
 from django.shortcuts import render, get_object_or_404
 from shopping.forms import CheckoutForm
 from django.template.context_processors import csrf
@@ -27,7 +26,7 @@ def pay_now(request, id):
 
                 if customer.paid:
                     messages.success(request, "You have successfully paid")
-                    return render(reverse('products'))
+                    return render(request, 'thank_you.html')
 
                 else:
                     messages.error(request, "Unable to take your payment")
@@ -38,8 +37,7 @@ def pay_now(request, id):
             messages.error(request, "We were unable to take a payment with that card!")
     else:
         form = CheckoutForm()
-
-    product = get_object_or_404(Product, pk=id)
+        product = get_object_or_404(Product, pk=id)
 
     args = {'form': form, 'publishable': settings.STRIPE_PUBLISHABLE, 'product': product}
     args.update(csrf(request))

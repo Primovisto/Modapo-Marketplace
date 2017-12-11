@@ -1,64 +1,57 @@
-{% extends 'base.html' %}
+ {% extends 'base.html' %}
 {% load staticfiles %}
 {% load bootstrap_tags %}
-
 {% block head_js %}
-  <script src="https://js.stripe.com/v2/" type="text/javascript"></script>
-  <script type="text/javascript">
-      //<![CDATA[
-      Stripe.publishableKey = '{{ publishable }}';
-      //]]>
-  </script>
-  <script type="text/javascript" src="{% static 'js/stripe.js' %}"></script>
-{% endblock %}
-
-{% block content %}
-    <div class="container">
-        <h1>Checkout</h1>
-
-        <!-- Content Row -->
-        <div class="row">
-            <div class="col-lg-12">
-
-                    <div class="row">
+<script src="https://js.stripe.com/v2/" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+Stripe.publishableKey = '{{ publishable }}';
+//]]>
+</script>
+<script type="text/javascript" src="{% static 'js/stripe.js' %}"></script>
+{% endblock %} {% block content %}
+<div class="container">
+    <h1>Checkout</h1>
+    <!-- Content Row -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="row">
+                <hr>
+                <div class="col-md-4 col-sm-6">
+                    {% if product.image %}
+                    <img class="imageplaceholder" src="/media/{{ product.image }}" style="width:300px; height: 266px; background-color: #fff; color: #ffffff;"> {% else %}
+                    <div class="imageplaceholder">No images available</div>
+                    {% endif %}
+                </div>
+                <div class="col-lg-8 col-sm-6">
+                    <h3>{{ product.product }}</h3>
+                    <div>
+                        <p><strong>Item description: </strong>{{ product.product_short_description }}</p>
+                        <p><strong>Price: </strong> &euro;{{ product.price }}</p>
                         <hr>
-                        <div class="col-md-4 col-sm-6">
-                            {% if product.image %}
-                                <img class="imageplaceholder" src="/media/{{ product.image }}"
-                                     style="width:300px; height: 266px; background-color: #fff; color: #ffffff;">
-                            {% else %}
-                                <div class="imageplaceholder">No images available</div>
-                            {% endif %}
-                        </div>
-                        <div class="col-lg-8 col-sm-6">
-                            <h3>{{ product.product }}</h3>
-                            <div>
-                                <p><strong>Item description: </strong>{{ product.product_short_description }}</p>
-                                <p><strong>Price: </strong> &euro;{{ product.price }}</p>
-
-                                <hr>
-                            </div>
-                        </div>
                     </div>
-
-                    <hr>
-            <form role="form" method="POST" id="payment-form" action="{% url 'pay_now_stripe' product.id %}">
-                    <div id="credit-card-errors" style="display:none">
-                        <div class="alert-message block-message error" id="stripe-error-message"></div>
-                    </div>
-
-                    {% csrf_token %}
-                    {{ form|as_bootstrap }}
-                    <div class="form-group">
-                        <input class="btn btn-success" id="submit_payment_btn" name="commit" type="submit"
-                               value="Submit Payment">
-                    </div>
-                </form>
-
+                </div>
             </div>
+            <hr>
+        <form action="{% url 'pay_now_stripe' product.id %}" method="POST">
+  <script
+    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+    data-key="pk_test_BXMhGZbzUnHrO4wR2QDrLSN1"
+    data-amount="{{ amount }}"
+    data-name="Velabri"
+    data-description="Widget"
+    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+    data-locale="auto"
+    data-zip-code="true"
+    data-currency="eur">
+  </script>
+            {% csrf_token %}
+</form>
+
         </div>
     </div>
-    {% block search %}
-        {% csrf_token %}
-        {% endblock %}
+</div>
+{% block search %}
+    {% csrf_token %}
+{% endblock %}
 {% endblock %}

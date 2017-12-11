@@ -18,7 +18,7 @@ def pay_now(request, id):
             try:
                 product = get_object_or_404(Product, pk=id)
                 customer = stripe.Charge.create(
-                    amount=999,
+                    amount=int(product.price),
                     currency='USD',
                     description=product.item,
                     card=form.cleaned_data['stripe_id'],
@@ -37,7 +37,8 @@ def pay_now(request, id):
             messages.error(request, "We were unable to take a payment with that card!")
     else:
         form = CheckoutForm()
-        product = get_object_or_404(Product, pk=id)
+
+    product = get_object_or_404(Product, pk=id)
 
     args = {'form': form, 'publishable': settings.STRIPE_PUBLISHABLE, 'product': product}
     args.update(csrf(request))

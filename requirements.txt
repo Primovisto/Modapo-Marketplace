@@ -25,7 +25,7 @@ six==1.11.0
 sqlparse==0.2.4
 stripe==1.75.0
 urllib3==1.22
-wheel==0.30.0
+wheel==0.38.1
 gunicorn==19.4
 dj-database-url==0.4.2
 whitenoise==3.3.1

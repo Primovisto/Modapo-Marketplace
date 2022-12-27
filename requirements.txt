@@ -20,7 +20,7 @@ pip==9.0.1
 python-dateutil==2.6.1
 pytz==2017.3
 requests==2.18.4
-setuptools==36.8.0
+setuptools==65.5.1
 six==1.11.0
 sqlparse==0.2.4
 stripe==1.75.0
